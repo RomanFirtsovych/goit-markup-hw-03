@@ -35,7 +35,7 @@ body {
   overflow: hidden;
 }
 .container{
-  width: 1158px;
+  width: 1158px; 
 margin-left: auto;
 margin-right: auto;
   padding-left: 15px;
@@ -118,6 +118,7 @@ margin-right: auto;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  height: 56px;
 }
 .list-button:hover,
 .list-button:focus {
@@ -157,12 +158,20 @@ button {
   border: none;
   border-radius: 4px;
    }
+   .section-two-item{
+    display: flex;
+    gap: 24px;
+   }
+   .section-two-item-list{
+     width: calc((100% - 72px) / 4); 
+   }
 .section-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+margin-bottom: 8px;
    }
 .section-text{
   color: #434455;
@@ -172,6 +181,7 @@ letter-spacing: 0.02em;
 }
 .section-two{
   background-color: #F4F4FD;
+  padding: 120px 0;
 }
 .section-two-title{
   color:#2E2F42;
@@ -181,15 +191,15 @@ font-weight: 700;
 line-height: 1.11;
 letter-spacing: 0.02em;
 text-transform: capitalize;
-margin-bottom: 79.65px;
-padding-top: 126.05px;
-
-
-
+margin-bottom: 72px;
 }
 .section-two-list{
   display: flex;
-column-gap: 24px;
+gap: 24px;
+
+}
+.section-two-people{
+  padding: 32px 0;
 }
 .section-two-subtitle{
   color: #2E2F42;
@@ -197,15 +207,15 @@ font-size: 20px;
 font-weight: 500;
 line-height: 1.2;
 letter-spacing: 0.02em;
-margin-top: 32px;
 margin-bottom: 8px;
+text-align: center;
 }
 .section-two-text{
   color:#434455;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
-margin-bottom: 32px;
+text-align: center;
 }
 .section-three-title{
   color:#2E2F42;
@@ -215,8 +225,24 @@ font-weight: 700;
 line-height: 1.11;
 letter-spacing: 0.02em;
 text-transform: capitalize;
+margin-bottom: 72px;
 }
-
+.section-three-list{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.section-three-item{
+  width: calc((100% - 48px) / 3);
+}
+.section-three-app{
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
+  
+}
 .section-three-subtitle{
   color:#2E2F42;
 font-size: 20px;
@@ -244,6 +270,7 @@ letter-spacing: 0.02em;
 }
 .end{
   background:#2E2F42;
+  padding: 100px 0;
 }
 .end-title{
 color:#4D5AE5;
@@ -253,6 +280,8 @@ font-weight: 700;
 line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
+display: inline-block;
+margin-bottom: 16px;
 }
 .logo-end{
   color: #F4F4FD;
@@ -263,4 +292,7 @@ text-transform: uppercase;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
+max-width: 264px;
+
 }
+
