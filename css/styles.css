@@ -54,8 +54,6 @@ margin-right: auto;
  .one-line{
   display: flex;
   justify-content: space-between;
- 
-  
  }
  .address-list{
   display: flex;
@@ -81,6 +79,7 @@ margin-right: auto;
   padding-top: 24px;
   padding-bottom: 24px;
   display: block;
+  transition: color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -295,3 +294,8 @@ max-width: 264px;
 
 }
 
+.social-list{
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 24px;
+}
