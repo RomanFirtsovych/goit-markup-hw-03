@@ -309,7 +309,7 @@ max-width: 264px;
 .end-content{
   display: flex;
   align-items: baseline; 
-  margin-right: 120px ;
+ 
 
 }
 .foter-two{
@@ -321,6 +321,9 @@ max-width: 264px;
   margin-bottom: 16px;
 
 
+}
+.kotusuha{
+   margin-right: 120px ;
 }
 .foter-list{
   display: flex; 
