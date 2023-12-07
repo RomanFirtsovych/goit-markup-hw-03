@@ -361,7 +361,7 @@ position: absolute;
   margin-bottom: 8px;
 
 }
-.class {
+.social-list-icon-two {
  justify-content: center;
   display: flex;
   width: 100%;
@@ -376,7 +376,14 @@ position: absolute;
   background-color: #404bbf; 
 
 }
-.social-list-item{
+
+.social-list{
   justify-content: center;
   gap: 24px;
+ 
+}
+.social-list-item{
+   width:40px;
+  height:40px;
+  
 }
