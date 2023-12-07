@@ -307,6 +307,32 @@ letter-spacing: 0.02em;
 max-width: 264px;
 
 }
+.end-content{
+  display: flex;
+  align-items: baseline;
+  margin-right: 120px ;
+
+}
+.foter-two{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+
+
+}
+.foter-list{
+  display: flex; 
+  gap: 16px;
+
+}
+.foter-list-iten{
+  width: 40px;
+  height: 40px;
+  
+}
 
 .social-list{
   display: flex;
