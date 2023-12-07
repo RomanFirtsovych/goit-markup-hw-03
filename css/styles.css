@@ -343,7 +343,8 @@ max-width: 264px;
 }
 .social-list-item{
   width: 40px; 
-  height: 40px;;
+  height: 40px;
+  transition :background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
  .overley-item{
@@ -438,9 +439,5 @@ box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.
 
 .class-foter:hover,
 .class-foter:focus{
-  background-color: #404bbf; 
-}
-.social-list-icon-two:hover,
-.social-list-icon-two:focus{
-  background-color: #404bbf; 
+  background-color:#31d0aa; 
 }
