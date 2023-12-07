@@ -307,8 +307,8 @@ max-width: 264px;
 
 }
 .end-content{
-  /* display: flex;
-  align-items: baseline; */
+  display: flex;
+  align-items: baseline; 
   margin-right: 120px ;
 
 }
