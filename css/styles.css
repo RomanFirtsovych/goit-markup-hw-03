@@ -361,7 +361,7 @@ position: absolute;
   margin-bottom: 8px;
 
 }
-.social-list-icon-two {
+.class {
  justify-content: center;
   display: flex;
   width: 100%;
@@ -370,20 +370,20 @@ position: absolute;
   border-radius: 50%;
    display: flex;  
   align-items: center; 
-} 
+}  
 .social-list-icon-two:hover,
 .social-list-icon-two:focus{
   background-color: #404bbf; 
 
 }
 
-.social-list{
+.social-list-item{
   justify-content: center;
   gap: 24px;
- 
-}
-.social-list-item{
    width:40px;
   height:40px;
-  
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); ;
+}
+.social-list-icon-two{
+  fill: #f4f4fd ;
 }
