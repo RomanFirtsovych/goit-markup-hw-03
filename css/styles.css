@@ -563,7 +563,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .rewie-form-input:focus + .rewie-form-input-icon{
-  stroke: #4D5AE5;
+ fill: #4D5AE5;
 }
 .rewie-form-coments{
   width: 100%;
