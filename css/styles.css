@@ -614,7 +614,9 @@ align-items: center;
 justify-content: center; 
 fill: transparent;
 }
-.rewie-form-checkbox:focus + .rewie-form-checkbox-label>.rewie-form-own-checkbox{
+.rewie-form-checkbox:focus + 
+.rewie-form-checkbox-lable
+>.rewie-form-own-checkbox{
   background-color:  #404bbf;
   fill:#F4F4FD;
   border: none; 
