@@ -455,15 +455,15 @@ transform: translateY(0%);
   height: 100%;
   background-color: rgba(46, 47, 66, 0.40);
   z-index: 9999999999999999999999999999;
-  /* opacity: 0;
+   opacity: 0;
   visibility: hidden;
   pointer-events: none;
   transition: opacity 250ms linear, visibility 250ms linear;
 }
 .backdrop.is-open{
-  opacity: 1:
+  opacity: 1;
   visibility:visible;
-  pointer-events: auto; */
+  pointer-events: auto; 
 }
 .modal{
   position: absolute;
@@ -486,11 +486,11 @@ padding: 72px 24px 24px 24px;
 line-height: 0;
 transition: 250ms linear;
 }
-/* .modal-close-bth-icons{
+ /* .modal-close-bth-icons{
   fill: var(--CORNFLOWER, #E7E9FC);
 stroke-width: 1px;
 stroke: rgba(0, 0, 0, 0.10);
-} */
+}  */
 .modal-close-bth:hover,
 .modal-close-bth:focus{ 
  stroke:  #404bbf;
