@@ -456,7 +456,7 @@ transform: translateY(0%);
   height: 100%;
   background-color: rgba(46, 47, 66, 0.40);
   z-index: 9999999999999999999999999999;
-     opacity: 0;
+     /* opacity: 0;
   visibility: hidden;
   pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -464,7 +464,7 @@ transform: translateY(0%);
 .backdrop.is-open{
   opacity: 1;
   visibility:visible;
-  pointer-events: auto;   
+  pointer-events: auto;    */
 }
 .modal{
   position: absolute;
@@ -523,8 +523,9 @@ margin-bottom: 16px;
   padding-left: 38px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.rewie-form-field-wraper{
+.rewie-form-input-wraper{
   margin-bottom: 16px;
+ 
   
 }
 .rewie-form-field-lable{
@@ -539,17 +540,20 @@ display: block;
 }
 .rewie-form-input-icon{
 position: absolute;
-top: 50% ;
+top: 50%;
 left: 16px ;
 transform: translateY(-50%);
 transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
+.rewie-form-input:focus{
+  border-color: #4D5AE5;
+  fill: #4D5AE5; 
+}
 .rewie-form-input-icon:focus{
   fill: #4D5AE5; 
 }
-.rewie-form-field-wraper{
-  position: relative;
-  
+.rewie-form-input-wraper{
+   position: relative;
   margin-bottom: 8px;
 }
 .rewie-form-input:focus{
@@ -606,7 +610,7 @@ align-items: center;
 justify-content: center; 
 fill: transparent;
 }
-.rewie-form-input:checked + .rewie-form-own-checkbox{
+.rewie-form-checkbox:checked + .rewie-form-checkbox-label>.rewie-form-own-checkbox{
   background-color:  #404bbf;
   fill:#F4F4FD;
   border: none; 
