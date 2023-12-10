@@ -498,19 +498,13 @@ cursor: pointer;
 .rewie-worm{
   margin-bottom: 16px;
 }
-/* 
+.modal-close-bth:hover,
 .modal-close-bth:focus{ 
  stroke:  #404bbf;
  background-color: #404bbf; 
  border: none;
  fill: #ffffff;
-}
-.modal-close-bth:hover{ 
-  stroke:  #404bbf;
-  background-color: #404bbf; 
-  border: none;
-  fill: #ffffff;
- } */
+ }
 .modal-close-bth-icons{
   fill: #ffffff;
 }
