@@ -649,6 +649,7 @@ letter-spacing: 0.02em;
 }
 .subscribe-form{
   display: flex;
+  gap:24px ;
 }
 .subscribe-label{
   gap:24px ;
@@ -672,11 +673,11 @@ letter-spacing: 0.02em;
   min-width: 165px; 
   height: 40px; 
   display: flex; 
-  ustify-content: center;
+  justify-content: center;
   align-items: center;
   color: #FFF;
 text-align: center;
-font-family: Roboto;
+font-family: "Roboto", sans-serif ;
 font-size: 16px;
 font-weight: 500;
 line-height: 24px; 
@@ -690,7 +691,7 @@ border-radius: 4px;
 
 .subscribe-svg{
   margin-left: 16px; 
-  
+
 }
 
 
