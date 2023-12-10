@@ -478,11 +478,10 @@
     </footer>
     <div class="backdrop">
       <div class="modal">
-<button class="modal-close-bth">
+<button class="modal-close-bth" type="button">
   <svg class="modal-close-bth-icons" width="8" aria-label="close modal icon"
   height="8";
-  type="button"
-  >
+   >
   
     <use href="./images/icons.svg#icon-close"></use>
   </svg>
@@ -505,7 +504,7 @@
   >
   <svg class="rewie-form-input-icon"
    width="18" 
-   height="18" 
+   height="24" 
    aria-label="icon user"
    >
     <use href="./images/icons.svg#icon-person"></use>
@@ -524,7 +523,7 @@
   required>
   <svg class="rewie-form-input-icon"
   width="18" 
-  height="18" 
+  height="24" 
   aria-label="icon user"
   >
    <use href="./images/icons.svg#icon-phone"></use>
@@ -540,7 +539,7 @@
   name="user-email">
   <svg class="rewie-form-input-icon"
   width="18" 
-  height="18" 
+  height="24" 
   aria-label="icon email"
   >
    <use href="./images/icons.svg#icon-email"></use>
@@ -548,8 +547,7 @@
 </div>
 </div>
 <div class="rewie-form-field-wraper">
-  <label class="rewie-form-field-lable" for="">Comment</label>
-  <div class="rewie-form-input-wraper">
+  <label class="rewie-form-field-lable" for="user-comment">Comment</label>
  <textarea 
  class="rewie-form-coments"
  name="user-comment"
@@ -558,21 +556,24 @@
 required
  ></textarea>
 </div>
-</div>
 <div class="rewie-form-checkbox-wraper">
   <input class="rewie-form-checkbox" 
   type="checkbox" 
-  id="user-privacy-policy" 
-  name="user-privacy-policy" 
+  id="user-privacy" 
+  name="user-privacy" 
   value="true"
+  visually-hidden
   required
   />
-  <label class="rewie-form-checkbox-lable" for="user-privacy-policy">
-   <span class="rewie-form-own-checkbox"></span>
+  <label class="rewie-form-checkbox-lable" for="user-privacy">
+   <span class="rewie-form-own-checkbox">
+    <svg width="10" height="8">
+      <use href="./images/icons.svg#icon-click">
+      </use>
+    </svg>
+   </span>
     I accept the terms and conditions of the
-     <a href="">Privacy Policy</a> 
-
-
+     <a class="accent-color" href="">Privacy Policy</a> 
 </label>
 </div>
 <button class="rewie-checkbox-submit-button"type="submit">Send</button>
