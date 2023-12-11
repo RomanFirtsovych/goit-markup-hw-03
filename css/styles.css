@@ -636,6 +636,10 @@ fill: transparent;
 .modal-close-bth:hover{
   fill:#ffffff;
 }
+.modal:focus,
+.modal:hover{
+  fill:#ffffff;
+}
 .accent-color{
   color:  #4d5ae5; ;
 }
