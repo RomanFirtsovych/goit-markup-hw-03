@@ -123,6 +123,8 @@ margin-right: auto;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  margin-left: auto;
+  margin-right: auto;
   height: 56px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
@@ -140,7 +142,8 @@ span {
 .section-one {
   background-color: #2e2f42;
   width: 1440px;
-height: 600px;
+margin: auto;
+
 padding: 188px 0;
 align-items: center;
 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
@@ -157,6 +160,8 @@ border: none;}
   letter-spacing: 0.02em;
   text-align: center;
   max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
 }
 button {
   cursor: pointer;
@@ -276,7 +281,7 @@ margin-bottom: 8px;
   background-color: #FFFFFF;
   text-align: center;
   width: 264px;
- margin-bottom: 120px;
+
  border-radius: 0px 0px 4px 4px;
  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
@@ -328,6 +333,7 @@ max-width: 264px;
 .foter-list{
   display: flex; 
   gap: 16px;
+  margin-right: 80px;
 
 }
 .foter-list-iten{
@@ -399,7 +405,7 @@ transform: translateY(0%);
   height: 4px;
   background-color: #404bbf; 
   border-radius: 2px;
-
+width: 100%;
 }
 .section-two-icon{
   display: flex;
@@ -456,7 +462,7 @@ transform: translateY(0%);
   height: 100%;
   background-color: rgba(46, 47, 66, 0.40);
   z-index: 9999999999999999999999999999;
-         opacity: 0;
+         /* opacity: 0;
   visibility: hidden;
   pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -464,7 +470,7 @@ transform: translateY(0%);
 .backdrop.is-open{
   opacity: 1;
   visibility:visible;  
-  pointer-events: auto;
+  pointer-events: auto;  */
 }
 .modal{
   position: absolute;
@@ -506,9 +512,6 @@ cursor: pointer;
  border: none;
  fill: #ffffff;
  }
-.modal-close-bth-icons{
-  fill: #ffffff;
-}
 .rewie-form-description{
   color: #2E2F42;
 text-align: center;
@@ -528,11 +531,9 @@ margin-bottom: 16px;
   outline: 0px solid transparent;
   padding-left: 38px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 8px;
+
 }
-.rewie-form-field-wraper{
-  margin-bottom: 8px;
- }
+
 .rewie-form-field-lable{
   color: var(--LIGHT-SLATE, #8E8F99);
 font-size: 12px;
@@ -580,7 +581,7 @@ padding: 8px 16px;
 outline:transparent;
  resize: none;
  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
- margin-bottom: 16px;
+
 }
 .rewie-form-coments::placeholder{
   color:  rgba(46, 47, 66, 0.40);
@@ -624,7 +625,11 @@ fill: transparent;
 .modal-close-bth-icons{
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 24px;
- 
+  fill:#2E2F42;
+}
+.modal-close-bth-icons:focus,
+.modal-close-bth-icons:hover{
+  fill:#F4F4FD;
 }
 
 .accent-color{
@@ -634,6 +639,8 @@ fill: transparent;
   height: 56px;
   font-size: 16px;
   font-weight: 500;
+  margin-left: auto;
+  margin-right: auto;
   min-width: 169px;  
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -690,6 +697,7 @@ border-radius: 4px;
 }
 .subscribe-svg{
   margin-left: 16px; 
+  fill: #FFFFFF;
 }
 
 .rewie-form{
