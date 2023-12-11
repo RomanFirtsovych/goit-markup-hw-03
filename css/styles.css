@@ -628,18 +628,12 @@ fill: transparent;
   width: 24px;
   fill:#2E2F42;
 }
-.modal-close-bth-icons:focus,
-.modal-close-bth-icons:hover{
+
+.modal-close-bth:focus  .modal-close-bth-icons,
+.modal-close-bth:hover .modal-close-bth-icons{
   fill:#ffffff;
 }
-.modal-close-bth:focus,
-.modal-close-bth:hover{
-  fill:#ffffff;
-}
-.modal:focus,
-.modal:hover{
-  fill:#ffffff;
-}
+
 .accent-color{
   color:  #4d5ae5; ;
 }
