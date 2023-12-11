@@ -629,7 +629,7 @@ fill: transparent;
 }
 .modal-close-bth-icons:focus,
 .modal-close-bth-icons:hover{
-  fill:#F4F4FD;
+  fill: #ffffff;
 }
 
 .accent-color{
@@ -662,6 +662,9 @@ letter-spacing: 0.02em;
 .subscribe-label{
   gap:24px ;
 
+}
+.rewie-form-field-wraper{
+  margin-bottom: 8px;
 }
 .subscribe-input{
   width: 264px; 
