@@ -1,713 +1,1645 @@
+/* Встановлення стилів для списків */
 .list {
   list-style-type: none;
+  /* Вимкнення маркерів для списків */
 }
+
+/* Встановлення стилів для посилань */
 .link {
   text-decoration: none;
+  /* Видалення підкреслення з посилань */
 }
-h1,h2,h3,h4,h5.h6,p{
-margin-top: 0;
-margin-bottom: 0;
-}
-ul,ol{
-  padding-left: 0;
+
+/* Встановлення стилів для заголовків і параграфів */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin-top: 0;
-margin-bottom: 0;
+  /* Видалення відступу зверху */
+  margin-bottom: 0;
+  /* Видалення відступу знизу */
 }
-img{
+
+/* Встановлення стилів для списків ul і ol */
+ul,
+ol {
+  padding-left: 0;
+  /* Видалення відступу зліва */
+  margin-top: 0;
+  /* Видалення відступу зверху */
+  margin-bottom: 0;
+  /* Видалення відступу знизу */
+}
+
+/* Встановлення стилів для зображень */
+img {
   display: block;
+  /* Встановлення блочного відображення для зображень */
+max-width: 100%;
+height: auto;
 }
+
+/* Основні стилі для сторінки */
 body {
   font-family: "Roboto", sans-serif;
+  /* Встановлення шрифту для сторінки */
   color: #434455;
+  /* Встановлення кольору тексту */
   background-color: #ffffff;
+  /* Встановлення кольору фону */
 }
+
+/* Стиль для прихованих елементів */
 .visually-hidden {
   position: absolute;
+  /* Абсолютне позиціонування */
   width: 1px;
+  /* Ширина 1 піксель */
   height: 1px;
+  /* Висота 1 піксель */
   margin: -1px;
+  /* Відступ -1 піксель */
   border: 0;
+  /* Без рамки */
   padding: 0;
-  
+  /* Без відступів */
   white-space: nowrap;
+  /* Без переносу слів */
   clip-path: inset(100%);
+  /* Вирізання вмісту */
   clip: rect(0 0 0 0);
+  /* Вирізання вмісту */
   overflow: hidden;
-}
-.container{
-  width: 1158px; 
-margin-left: auto;
-margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  /* Приховування переповнення */
 }
 
-.page-navigation{
-  display: flex; 
+/* Стиль для контейнера */
+.container {
+  /* width: 1158px; */
+  width: 320px;
+  /* Ширина контейнера */
+  margin-left: auto;
+  /* Автоматичний відступ зліва */
+  margin-right: auto;
+  /* Автоматичний відступ справа */
+  /* padding-left: 15px; */
+  /* Відступ зліва */
+  /* padding-right: 15px; */
+  /* Відступ справа */
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* Стиль для навігації */
+.page-navigation {
+  display: flex;
+  /* Встановлення flexbox */
   align-items: center;
+  /* Вирівнювання по центру по вертикалі */
 }
-.menu{
-  display: flex;
-  gap: 40px;
 
+/* Стиль для меню */
+.menu {
+  /* display: flex; */
+  display: none;
+  /* Встановлення flexbox */
+  gap: 40px;
+  /* Відстань між елементами меню */
 }
- .one-line{
+
+/* Стиль для елементів, розташованих в один рядок */
+.one-line {
   display: flex;
+  /* Встановлення flexbox */
   justify-content: space-between;
- }
- .address-list{
+  /* Розподіл простору між елементами */
+}
+
+/* Стиль для списку адрес /* CSS для основних стилів секції */
+.section-two-item {
   display: flex;
-  gap: 40px;
- }
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #4d5ae5;
-  margin-right: 76px;
+  /* gap: 24px; */
+  /* gap: 72px; */
+  flex-wrap: wrap;
+}
 
+.section-two-item-list {
+  width: 100%;
 }
-.menu-link {
-  color: #2e2f42;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  display: block;
-  transition: color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
-}
-.menu-link:hover,
-.menu-link:focus {
-  color: #404bbf;
-}
-.page-header{
-  border-bottom: 1px solid  #E7E9FC;
-  background: #FFF;
-  box-shadow:
-   0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 
-    0px 1px 6px  rgba(46, 47, 66, 0.08);
-}
-.page-address {
-  font-style: normal;
-  color: #434455;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  
-}
-.address-link {
+
+.section-two-icon {
+  display: flex;
   justify-content: center;
-  flex-shrink: 0;
-  color: #434455;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  display: block;
-  transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-}
-
-.address-link:hover,
-.address-link:focus {
-  color: #404bbf;
-}
-.list-button {
-  background: #4d5ae5;
-  min-width: 169px;  
-  font-weight: 500;
-  color: #ffffff;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  margin-left: auto;
-  margin-right: auto;
-  height: 56px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-}
-.list-button:hover,
-.list-button:focus {
-  background: #404bbf;
-}
-span {
-  color: #2e2f42;
-}
-.section{
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-.section-one {
-  background-color: #2e2f42;
-  width: 1440px;
-margin: auto;
-
-padding: 188px 0;
-align-items: center;
-background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
-background-size: cover;
-max-width: 1440px;
-background-repeat: no-repeat;
-background-position: center;
-border: none;}
-.section-one-title {
-  color: #ffffff;
-  font-size: 56px; 
-  font-weight: 700;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-  text-align: center;
-  max-width: 496px;
-  margin-left: auto;
-  margin-right: auto;
-}
-button {
-  cursor: pointer;
-  color: #ffffff;
-  font-size: 56px;
-  display: block;
-     
-  border: none;
+  align-items: center;
+  height: 112px;
+  background-color: #f4f4fd;
   border-radius: 4px;
-  }
-   .section-two-item{
-    display: flex;
-    gap: 24px;
-   }
-   .section-two-item-list{
-     width: calc((100% - 72px) / 4); 
-   }
+  margin-bottom: 8px;
+}
+
+.social-list-icon {
+  width: 64px;
+  height: 64px;
+}
+
 .section-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-margin-bottom: 8px;
-   }
-.section-text{
-  color: #434455;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  text-align: center;
 }
-.section-two{
-  background-color: #F4F4FD;
-  padding: 120px 0;
+
+.section-text {
+  /* color: #434455; */
+  /* font-size: 16px; */
+  /* line-height: 1.5; */
+  /* letter-spacing: 0.02em; */
+  /* text-align: center; */
+  font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: var(--slate);
 }
-.section-two-title{
-  color:#2E2F42;
-text-align: center;
-font-size: 36px;
-font-weight: 700;
-line-height: 1.11;
-letter-spacing: 0.02em;
-text-transform: capitalize;
-margin-bottom: 72px;
+
+.address-list {
+  /* display: flex; */
+  display: none;
+  /* Встановлення flexbox */
+  gap: 40px;
+  /* Відстань між елементами списку */
 }
-.section-two-list{
-  display: flex;
-gap: 24px;
+
+/* Стиль для логотипу */
+.logo {
+  font-family: "Raleway", sans-serif;
+  /* Встановлення шрифту для логотипу */
+  font-size: 18px;
+  /* Розмір шрифту */
+  font-weight: 700;
+  /* Напівжирний шрифт */
+  line-height: 1.17;
+  /* Висота рядка */
+  letter-spacing: 0.03em;
+  /* Інтервал між літерами */
+  text-transform: uppercase;
+  /* Всі літери великі */
+  color: #4d5ae5;
+  /* Колір тексту */
+  margin-right: 76px;
+  /* Відступ справа */
+}
+
+/* Стиль для посилань у меню */
+.menu-link {
+  color: #2e2f42;
+  /* Колір тексту */
+  font-size: 16px;
+  /* Розмір шрифту */
+  font-weight: 500;
+  /* Напівжирний шрифт */
+  line-height: 1.5;
+  /* Висота рядка */
+  letter-spacing: 0.02em;
+  /* Інтервал між літерами */
+  padding-top: 24px;
+  /* Відступ зверху */
+  padding-bottom: 24px;
+  /* Відступ знизу */
+  display: block;
+  /* Блочне відображення */
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* Плавний перехід кольору */
+}
+
+/* Стиль для наведення курсору та фокусу на посилання в меню */
+.menu-link:hover,
+.menu-link:focus {
+  color: #404bbf;
+  /* Зміна кольору тексту */
+}
+
+/* Стиль для заголовка сторінки */
+.page-header {
+  /* border-bottom: 1px solid #E7E9FC; */
+  /* Нижня рамка */
+  /* background: #FFF; */
+  /* Колір фону */
+  /* box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08); */
+  /* Тінь */
+  /* display: flex; */
+    /* padding-top: 17.5px; */
+      /* padding-bottom: 17.5px; */
+      padding-top: 16px;
+      padding-bottom: 16px;
 
 }
-.section-two-people{
-  padding: 32px 0;
+
+/* Стиль для адреси на сторінці */
+.page-address {
+  font-style: normal;
+  /* Звичайний стиль шрифту */
+  color: #434455;
+  /* Колір тексту */
+  font-size: 16px;
+  /* Розмір шрифту */
+  line-height: 1.5;
+  /* Висота рядка */
+  letter-spacing: 0.02em;
+  /* Інтервал між літерами */
 }
-.section-two-subtitle{
+
+/* Стиль для посилань адреси */
+.address-link {
+  justify-content: center;
+  /* Вирівнювання по центру */
+  flex-shrink: 0;
+  /* Заборона стиснення */
+  color: #434455;
+  /* Колір тексту */
+  padding-top: 24px;
+  /* Відступ зверху */
+  padding-bottom: 24px;
+  /* Відступ знизу */
+  display: block;
+  /* Блочне відображення */
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* Плавний перехід кольору */
+}
+
+/* Стиль для наведення курсору та фокусу на посилання адреси */
+.address-link:hover,
+.address-link:focus {
+  color: #404bbf;
+  /* Зміна кольору тексту */
+}
+
+.menu-open-bth{
+background-color: transparent;
+border: none;
+padding: 0;
+margin-right: 16px;
+}
+
+.menu-close-bth {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 24px;
+}
+
+.mob-menu{
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: #FFF;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding: 24px 24px 40px 16px;
+}
+.is-open{
+overflow: auto; 
+opacity: 0;
+visibility: hidden;
+pointer-events: none;
+}
+
+.mb-menu-link{
+  font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1,11;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+
+}
+/* 
+.mb-menu-item :not(:last-child){
+  margin-bottom: 40px;
+} */
+
+.mb-menu-list :not(:last-child){
+  margin-bottom: 40px;
+}
+
+.mb-social-list-item{
+  width: 24px;
+  height: 24px;
+}
+
+.mb-social-list{
+  display: flex;
+  gap: 40px;
+  margin-top: 48px;
+}
+
+.mb-menu-link:hover,
+.mb-mevu-link:focus {
+  color: #404bbf;
+  /* Зміна кольору фону */
+}
+
+.mb-address-link{
+  color: #2e2f42;
+}
+
+.mb-address-list :not(:last-child){
+  margin-bottom: 24px;
+}
+
+.mb-address-link:hover,
+.mb-address-link:focus {
+  color: #404bbf;
+  /* Зміна кольору фону */
+}
+
+.mb-class-foter{
+  display: flex;
+    /* Встановлення flexbox */
+    width: 100%;
+    /* Ширина */
+    height: 100%;
+    /* Висота */
+    background-color: #4d5ae5;
+    /* Колір фону */
+    border-radius: 50%;
+    /* Радіус закруглення */
+    align-items: center;
+    /* Вирівнювання по центру по вертикалі */
+    justify-content: center;
+    /* Вирівнювання по центру */
+    gap: 24px;
+    /* Відстань між елементами */
+    width: 40px;
+    /* Ширина */
+    height: 40px;
+    /* Висота */
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* Плавний перехід */
+}
+
+/* Стиль для кнопки замовлення послуг */
+.list-button {
+  background: #4d5ae5;
+  /* Колір фону */
+  min-width: 169px;
+  /* Мінімальна ширина */
+  font-weight: 500;
+  /* Напівжирний шрифт */
+  color: #ffffff;
+  /* Колір тексту */
+  font-size: 16px;
+  /* Розмір шрифту */
+  line-height: 1.5;
+  /* Висота рядка */
+  letter-spacing: 0.04em;
+  /* Інтервал між літерами */
+  margin-left: auto;
+  /* Автоматичний відступ зліва */
+  margin-right: auto;
+  /* Автоматичний відступ справа */
+  height: 56px;
+  /* Висота кнопки */
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* Плавний перехід кольору фону */
+  padding-left: 23px;
+  padding-right:24px ;
+}
+
+/* Стиль для наведення курсору та фокусу на кнопку */
+.list-button:hover,
+.list-button:focus {
+  background: #404bbf;
+  /* Зміна кольору фону */
+}
+
+/* Стиль для span */
+span {
+  color: #2e2f42;
+  /* Колір тексту */
+}
+
+/* Стиль для секцій */
+.section {
+  padding-top: 120px;
+  /* Відступ зверху */
+  padding-bottom: 120px;
+  /* Відступ знизу */
+}
+
+/* Стиль для першої секції */
+.section-one {
+  background-color: #2e2f42;
+  /* Колір фону */
+  /* width: 1440px; */
+  /* Ширина секції */
+  margin: auto;
+  /* Автоматичні відступи */
+  /* padding: 188px 0; */
+  padding-bottom: 72px;
+  /* Відступи зверху та знизу */
+  align-items: center;
+  /* Вирівнювання по центру по вертикалі */
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-mb.jpg);
+  /* Фонова картинка з градієнтом */
+  background-size: cover;
+  /* Масштабування фону */
+  max-width: 1440px;
+  /* Максимальна ширина */
+  background-repeat: no-repeat;
+  /* Без повтору фону */
+  background-position: center;
+  /* Центрування фону */
+  border: none;
+  /* Без рамки */
+  @media screen and (min-resolution: 192dpi) {
+      .section-one {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-mb-2.jpg);
+      }
+    }
+}
+
+/* Стиль для заголовка першої секції */
+.section-one-title {
+  color: #ffffff;
+  /* Колір тексту */
+  /* font-size: 56px; */
+  font-size: 36px;
+  /* Розмір шрифту */
+  font-weight: 700;
+  /* Напівжирний шрифт */
+  /* line-height: 1.07; */
+  line-height: 1.11;
+  /* Висота рядка */
+  letter-spacing: 0.02em;
+  /* Інтервал між літерами */
+  text-align: center;
+  /* Вирівнювання по центру */
+  max-width: 496px;
+  /* Максимальна ширина */
+  margin-left: auto;
+  /* Автоматичний відступ зліва */
+  margin-right: auto;
+  /* Автоматичний відступ справа */
+/* padding-bottom: 48px; */
+padding: 72px 52px;
+}
+
+/* Стиль для кнопок */
+button {
+  cursor: pointer;
+  /* Зміна курсору на вказівник */
+  color: #ffffff;
+  /* Колір тексту */
+  /* font-size: 56px; */
+  /* Розмір шрифту */
+  display: block;
+  /* Блочне відображення */
+  border: none;
+  /* Без рамки */
+  border-radius: 4px;
+  /* Радіус закруглення */
+}
+
+/* Стиль для елементів другої секції */
+.section-two-item {
+  display: flex;
+  /* Встановлення flexbox */
+  flex-wrap: wrap;
+  /* gap: 24px; */
+  /* Відстань між елементами */
+}
+
+/* Стиль для списку елементів другої секції */
+.section-two-item-list {
+  /* width: calc((100% - 72px) / 4); */
+  /* Ширина елемента */
+  width: 100%;
+  padding-bottom: 72px;
+}
+
+/* Стиль для заголовків секцій */
+.section-title {
+  font-weight: 700;
+  /* Напівжирний шрифт */
+  font-size: 36px;
+  /* Розмір шрифту */
+  line-height: 1.2;
+  /* Висота рядка */
+  letter-spacing: 0.02em;
+  /* Інтервал між літерами */
+  color: #2e2f42;
+  /* Колір тексту */
+  margin-bottom: 8px;
+  /* Відступ знизу */
+}
+
+/* Стиль для тексту в секціях */
+.section-text {
+  color: #434455;
+  /* Колір тексту */
+  font-size: 16px;
+  /* Розмір шрифту */
+  line-height: 1.5;
+  /* Висота рядка */
+  letter-spacing: 0.02em;
+  /* Інтервал між літерами */
+  font-weight: 500;
+}
+
+/* Стиль для другої секції */
+.section-two {
+  background-color: #F4F4FD;
+  /* Колір фону */
+  /* padding: 120px 0; */
+  /* padding: 96px 28px; */
+  /* Відступи зверху та знизу */
+}
+
+/* Стиль для заголовка другої секції */
+.section-two-title {
   color: #2E2F42;
-font-size: 20px;
-font-weight: 500;
-line-height: 1.2;
-letter-spacing: 0.02em;
-margin-bottom: 8px;
-text-align: center;
+  /* Колір тексту */
+  text-align: center;
+  /* Вирівнювання по центру */
+  font-size: 36px;
+  /* Розмір шрифту */
+  font-weight: 700;
+  /* Напівжирний шрифт */
+  line-height: 1.11;
+  /* Висота рядка */
+  letter-spacing: 0.02em;
+  /* Інтервал між літерами */
+  text-transform: capitalize;
+  /* Перші літери великі */
+  /* margin-bottom:72px; */
+  padding: 96px 51px 72px;
+  /* Відступ знизу */
 }
-.section-two-text{
-  color:#434455;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-text-align: center;
+
+/* Стиль для списку елементів другої секції */
+.section-two-list {
+  /* display: flex; */
+  /* Встановлення flexbox */
+  /* gap: 24px; */
+  /* Відстань між елементами */
+width: 100%;
+padding-bottom: 96px;
 }
-.section-three-title{
-  color:#2E2F42;
-font-size: 36px;
-text-align: center;
-font-weight: 700;
-line-height: 1.11;
-letter-spacing: 0.02em;
-text-transform: capitalize;
-margin-bottom: 72px;
+
+/* Стиль для людей у другій секції */
+.section-two-people {
+  padding: 32px 16px 32px 16px;
+  /* Відступи зверху та знизу */
 }
-.section-three-list{
+
+/* Стиль для підзаголовків у другій секції */
+.section-two-subtitle {
+  color: #2E2F42;
+  /* Колір тексту */
+  font-size: 20px;
+  /* Розмір шрифту */
+  font-weight: 500;
+  /* Напівжирний шрифт */
+  line-height: 1.2;
+  /* Висота рядка */
+  letter-spacing: 0.02em;
+  /* Інтервал між літерами */
+  margin-bottom: 8px;
+  /* Відступ знизу */
+  text-align: center;
+  /* Вирівнювання по центру */
+}
+
+/* Стиль для тексту у другій секції */
+.section-two-text {
+  color: #434455;
+  /* Колір тексту */
+  font-size: 16px;
+  /* Розмір шрифту */
+  line-height: 1.5;
+  /* Висота рядка */
+  letter-spacing: 0.02em;
+  /* Інтервал між літерами */
+  text-align: center;
+  /* Вирівнювання по центру */
+}
+
+/* Стиль для заголовка третьої секції */
+.section-three-title {
+  color: #2E2F42;
+  /* Колір тексту */
+  font-size: 36px;
+  /* Розмір шрифту */
+  text-align: center;
+  /* Вирівнювання по центру */
+  font-weight: 700;
+  /* Напівжирний шрифт */
+  line-height: 1.11;
+  /* Висота рядка */
+  letter-spacing: 0.02em;
+  /* Інтервал між літерами */
+  text-transform: capitalize;
+  /* Перші літери великі */
+  margin-bottom: 72px;
+  /* Відступ знизу */
+}
+
+/* Стиль для списку елементів третьої секції */
+.section-three-list {
+  /* display: flex; */
+  /* Встановлення flexbox */
+  flex-wrap: wrap;
+  /* Перенесення елементів на новий рядок */
+  column-gap: 24px;
+  /* Відстань між стовпцями */
+  row-gap: 48px;
+  /* Відстань між рядками */
+}
+
+/* Стиль для елементів третьої секції */
+.section-three-item {
+  /* width: calc((100% - 48px) / 3); */
+  /* Ширина елемента */
+  position: relative;
+  /* Відносне позиціонування */
+  overflow: hidden;
+  /* Приховування переповнення */
+}
+
+/* Стиль для додаткової інформації в третій секції */
+.section-three-app {
+  padding: 32px 16px;
+  /* Відступи */
+  border: 1px solid #e7e9fc;
+  /* Рамка */
+  border-top: none;
+  /* Без верхньої рамки */
+}
+
+/* Стиль для підзаголовків у третій секції */
+.section-three-subtitle {
+  color: #2E2F42;
+  /* Колір тексту */
+  font-size: 20px;
+  /* Розмір шрифту */
+  font-weight: 500;
+  /* Напівжирний шрифт */
+  line-height: 1.2;
+  /* Висота рядка */
+  letter-spacing: 0.02em;
+  /* Інтервал між літерами */
+  margin-bottom: 8px;
+  /* Відступ знизу */
+}
+
+/* Стиль для тексту у третій секції */
+.section-three-text {
+  color: #434455;
+  /* Колір тексту */
+  font-size: 16px;
+  /* Розмір шрифту */
+  font-weight: 400;
+  /* Звичайний шрифт */
+  line-height: 1.5;
+  /* Висота рядка */
+  letter-spacing: 0.02em;
+  /* Інтервал між літерами */
+}
+
+/* Стиль для елементів списку */
+.list-one {
+  list-style-type: none;
+  /* Вимкнення маркерів для списків */
+  background-color: #FFFFFF;
+  /* Колір фону */
+  text-align: center;
+  /* Вирівнювання по центру */
+  width: 264px;
+  /* Ширина елемента */
+  border-radius: 0px 0px 4px 4px;
+  /* Радіус закруглення */
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  /* Тінь */
+  /* padding-bottom: 72px; */
+}
+
+/* Стиль для футера */
+.end {
+  background: #2E2F42;
+  /* Колір фону */
+  /* padding: 100px 0; */
+  /* Відступи зверху та знизу */
+  padding: 96px 16px;
+}
+
+/* Стиль для заголовка футера */
+.end-title {
+  color: #4D5AE5;
+  /* Колір тексту */
+  font-family: "Raleway", sans-serif;
+  /* Шрифт */
+  font-size: 18px;
+  /* Розмір шрифту */
+  font-weight: 700;
+  /* Напівжирний шрифт */
+  line-height: 1.17;
+  /* Висота рядка */
+  letter-spacing: 0.03em;
+  /* Інтервал між літерами */
+  text-transform: uppercase;
+  /* Всі літери великі */
+  display: inline-block;
+  /* Відображення як inline-block */
+  margin-bottom: 16px;
+  /* Відступ знизу */
+  text-align: center;
+  padding-left: 86px;
+}
+
+/* Стиль для логотипу у футері */
+.logo-end {
+  color: #F4F4FD;
+  /* Колір тексту */
+}
+
+/* Стиль для тексту у футері */
+.end-text {
+  color: #F4F4FD;
+  /* Колір тексту */
+  font-size: 16px;
+  /* Розмір шрифту */
+  line-height: 1.5;
+  /* Висота рядка */
+  letter-spacing: 0.02em;
+  /* Інтервал між літерами */
+  max-width: 264px;
+  /* Максимальна ширина */
+  padding-bottom: 72px;
+}
+
+/* Стиль для контейнера у футері */
+.end-content {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
-}
-.section-three-item{
-  width: calc((100% - 48px) / 3);
-  position: relative;
-  overflow: hidden;
- 
-}
-.section-three-app{
-  padding: 32px 16px;
-  border: 1px solid #e7e9fc;
-  border-top: none;
- 
-}
-.section-three-subtitle{
-  color:#2E2F42;
-font-size: 20px;
-font-weight: 500;
-line-height: 1.2;
-letter-spacing: 0.02em;
-margin-bottom: 8px;
-}
-.section-three-text{
-  color: #434455;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-
+  /* Встановлення flexbox */
+  align-items: baseline;
+  /* Вирівнювання по базовій лінії */
 }
 
-.list-one{
-  list-style-type: none;
-  background-color: #FFFFFF;
-  text-align: center;
-  width: 264px;
-
- border-radius: 0px 0px 4px 4px;
- box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-}
-.end{
-  background:#2E2F42;
-  padding: 100px 0;
-}
-.end-title{
-color:#4D5AE5;
-font-family: "Raleway",sans-serif;
-font-size: 18px;
-font-weight: 700;
-line-height: 1.17;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-display: inline-block;
-margin-bottom: 16px;
-}
-.logo-end{
-  color: #F4F4FD;
-}
-.end-text{
-  color: #F4F4FD;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-max-width: 264px;
-
-}
-.end-content{
-  display: flex;
-  align-items: baseline; 
- 
-
-}
-.foter-two{
+/* Стиль для заголовка соціальних медіа */
+.foter-two {
   font-weight: 500;
+  /* Напівжирний шрифт */
   font-size: 16px;
+  /* Розмір шрифту */
   line-height: 1.5;
+  /* Висота рядка */
   letter-spacing: 0.02em;
+  /* Інтервал між літерами */
   color: #FFFFFF;
+  /* Колір тексту */
   margin-bottom: 16px;
-
-
+  /* Відступ знизу */
+  /* text-align: center; */
+  padding-left: 86px;
 }
-.kotusuha{
-   margin-right: 120px ;
+
+/* Стиль для контейнера у футері */
+.kotusuha {
+  /* margin-right: 120px; */
+  /* Відступ справа */
 }
-.foter-list{
-  display: flex; 
+
+/* Стиль для списку соціальних медіа */
+.foter-list {
+  display: flex;
+  /* Встановлення flexbox */
   gap: 16px;
+  /* Відстань між елементами */
   margin-right: 80px;
-
+  padding-left: 40px;
+  /* Відступ справа */
+  padding-bottom: 72px;
 }
-.foter-list-iten{
+
+/* Стиль для елементів списку соціальних медіа */
+.foter-list-iten {
   width: 40px;
+  /* Ширина елемента */
   height: 40px;
-
+  /* Висота елемента */
 }
 
-.social-list{
+/* Стиль для соціальних медіа */
+.social-list {
   display: flex;
+  /* Встановлення flexbox */
   justify-content: space-between;
+  /* Розподіл простору між елементами */
   margin: 16px 24px;
+  /* Відступи */
   justify-content: center;
-  gap: 24px; 
+  /* Вирівнювання по центру */
+  gap: 24px;
+  /* Відстань між елементами */
+padding-right:16px;
+padding-left:16px;
+
 }
-.social-list-item{
-  width: 40px; 
+
+/* Стиль для елементів соціальних медіа */
+.social-list-item {
+  width: 40px;
+  /* Ширина елемента */
   height: 40px;
+  /* Висота елемента */
 }
 
- .overley-item{
-position: absolute; 
- top: 0;
- font-size: 16px;
- line-height: 1.5;
- letter-spacing: 0.02em;
- color: #F4F4FD;
- padding: 40px 32px;
- background-color:#4d5ae5;
- height: 100%;
- width: 100%;
- transform: translateY(100%);
- transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-
-} 
-.overley{
- overflow: auto;
-}
-
-.section-three-overley{
-  transform: translateY(0%);
-  position: relative;
-  overflow: hidden;
-
-}
-.section-three-item:hover .overley-item{
-transform: translateY(0%);
-
-}
-.section-three-item{
-   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
- }
-.section-three-item:hover
-{
-  box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}.menu-link-studio{
-  position: relative; 
-  color: #404bbf; 
-
-
-
-
-}
-.menu-link-studio::after{
-  content: "";
+/* Стиль для накладення */
+.overley-item {
   position: absolute;
+  /* Абсолютне позиціонування */
+  top: 0;
+  /* Верхнє вирівнювання */
+  font-size: 16px;
+  /* Розмір шрифту */
+  line-height: 1.5;
+  /* Висота рядка */
+  letter-spacing: 0.02em;
+  /* Інтервал між літерами */
+  color: #F4F4FD;
+  /* Колір тексту */
+  padding: 40px 32px;
+  /* Відступи */
+  background-color: #4d5ae5;
+  /* Колір фону */
+  height: 100%;
+  /* Висота 100% */
+  width: 100%;
+  /* Ширина 100% */
+  transform: translateY(100%);
+  /* Трансформація */
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* Плавний перехід */
+}
+
+/* Стиль для контейнера накладення */
+.overley {
+  overflow: auto;
+  /* Автоматичне управління переповненням */
+}
+
+/* Стиль для накладення у третій секції */
+.section-three-overley {
+  transform: translateY(0%);
+  /* Трансформація */
+  position: relative;
+  /* Відносне позиціонування */
+  overflow: hidden;
+  /* Приховування переповнення */
+}
+
+/* Стиль для наведення курсору на елементи третьої секції */
+.section-three-item:hover .overley-item {
+  transform: translateY(0%);
+  /* Трансформація */
+}
+
+/* Стиль для елементів третьої секції */
+.section-three-item {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* Плавний перехід */
+}
+
+/* Стиль для наведення курсору на елементи третьої секції */
+.section-three-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  /* Тінь */
+}
+
+/* Стиль для спеціального посилання у меню */
+.menu-link-studio {
+  position: relative;
+  /* Відносне позиціонування */
+  color: #404bbf;
+  /* Колір тексту */
+}
+
+/* Стиль для додаткового елемента у меню */
+.menu-link-studio::after {
+  content: "";
+  /* Порожній вміст */
+  position: absolute;
+  /* Абсолютне позиціонування */
   left: 0;
+  /* Вирівнювання зліва */
   bottom: -1px;
+  /* Нижнє вирівнювання */
   height: 4px;
-  background-color: #404bbf; 
+  /* Висота */
+  background-color: #404bbf;
+  /* Колір фону */
   border-radius: 2px;
-width: 100%;
+  /* Радіус закруглення */
+  width: 100%;
+  /* Ширина */
 }
-.section-two-icon{
+
+/* Стиль для іконок у другій секції */
+.section-two-icon {
   display: flex;
+  /* Встановлення flexbox */
+  display: none;
   justify-content: center;
+  /* Вирівнювання по центру */
   align-items: center;
+  /* Вирівнювання по центру по вертикалі */
   height: 112px;
-  background-color: #f4f4fd; 
-  border-radius: 4px; 
+  /* Висота */
+  background-color: #f4f4fd;
+  /* Колір фону */
+  border-radius: 4px;
+  /* Радіус закруглення */
   margin-bottom: 8px;
+  /* Відступ знизу */
 }
+
+/* Стиль для класу соціальних медіа */
 .class {
   display: flex;
+  /* Встановлення flexbox */
   width: 100%;
+  /* Ширина */
   height: 100%;
+  /* Висота */
   background-color: #4d5ae5;
-  border-radius: 50%;  
-  align-items: center; 
-    justify-content: center;
-  gap: 24px;
-   width:40px;
-  height:40px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); ;
-
-}  
-.class:hover,
-.class:focus{
-  background-color: #404bbf; 
-}
-
-.social-list-icon-two{
-  fill: #f4f4fd ;
-}
-.class-foter{
-  display: flex;
-  width: 100%;
-  height: 100%;
-  background-color: #4d5ae5;
-  border-radius: 50%;  
-  align-items: center; 
-    justify-content: center;
-  gap: 24px;
-  transition :background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-}
-
-.class-foter:hover,
-.class-foter:focus{
-  background-color:#31d0aa; 
-}
-.backdrop{
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(46, 47, 66, 0.40);
-  z-index: 9999999999999999999999999999;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.backdrop.is-open{
-  opacity: 1;
-  visibility:visible;  
-  pointer-events: auto;
-}
-.modal{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50% ,-50%);
-  width: 408px;
-min-height: 584px;
-background-color:  #FCFCFC;
-border-radius: 4px;
-padding: 72px 24px 24px 24px;
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-close-bth{
-  position: absolute;
-  top: 24px;
-  width: 24px;
-  height: 24px; 
-  right: 24px;
+  /* Колір фону */
   border-radius: 50%;
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
-  background-color: #e7e9fc;
-  border: 1px solid rgba(0, 0, 0, 0.1); 
-  padding:0;
-line-height: 0;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-cursor: pointer;
-}
-.rewie-worm{
-  margin-bottom: 16px;
-}
-.modal-close-bth:hover,
-.modal-close-bth:focus{ 
- stroke:  #404bbf;
- background-color: #404bbf; 
- border: none;
- fill: #ffffff;
- }
-.rewie-form-description{
-  color: #2E2F42;
-text-align: center;
-font-family: Roboto;
-font-size: 16px;
-font-weight: 500;
-line-height: 1.5; 
-letter-spacing: 0.02em;
-margin-bottom: 16px;
-}
-.rewie-form-input{
-  width: 100%;
-  height: 40px;
-  border-radius: 4px;
-  border: 1px solid  rgba(46, 47, 66, 0.40);
-  background-color: transparent;
-  outline: 0px solid transparent;
-  padding-left: 38px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-
-.rewie-form-field-lable{
-  color: #8E8F99;
-font-size: 12px;
-font-weight: 400;
-line-height: 1.17; 
-letter-spacing: 0.04em;
-margin-bottom: 4px;
-display: block;
-
-}
-.rewie-form-input-icon{
-position: absolute;
-top: 50%;
-left: 16px ;
-transform: translateY(-50%);
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-}
-.rewie-form-input:focus{
-  border-color: #4D5AE5;
-  fill: #4D5AE5; 
-}
-.rewie-form-input-icon:focus{
-  fill: #4D5AE5; 
-}
-.rewie-form-input-wraper{
-   position: relative;
-  margin-bottom: 8px;
-}
-
-.rewie-form-input:focus + .rewie-form-input-icon{
- fill: #4D5AE5;
-}
-.rewie-form-coments{
-  width: 100%;
-  height: 120px;
-  border-radius: 4px;
-  border: 1px solid rgba(46, 47, 66, 0.4) ;
-font-size: 12px;
-font-weight: 400;
-line-height: 1.17;
-letter-spacing: 0.04em;
-color:  rgba(46, 47, 66, 0.40);
-background-color: transparent;
-padding: 8px 16px;
-outline:transparent;
- resize: none;
- transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
-}
-.rewie-form-coments::placeholder{
-  color:  rgba(46, 47, 66, 0.40);
-}
-.rewie-form-coments:focus{
-  border-color: #4D5AE5;
- 
-}
-.rewie-form-checkbox-wraper{
-  margin-bottom: 24px; 
-
-}
-.rewie-form-checkbox-lable{
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em; 
-  color:  #8e8f99;;
-}
-.rewie-form-own-checkbox{
-  display: block;
-  width: 16px;
-  cursor: pointer;
-height: 16px;
-stroke-width: 1px;
-stroke: rgba(46, 47, 66, 0.40);
-border: 1px solid rgba(46, 47, 66, 0.4); 
-border-radius: 2px; 
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-display: inline-flex;
-align-items: center;
-justify-content: center; 
-fill: transparent;
-}
-.rewie-form-checkbox:focus + 
-.rewie-form-checkbox-lable
->.rewie-form-own-checkbox{
-  background-color:  #404bbf;
-  fill:#F4F4FD;
-  border: none; 
-}
-.modal-close-bth-icons{
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 24px;
-  fill:#2E2F42;
-}
-
-.modal-close-bth:focus  .modal-close-bth-icons,
-.modal-close-bth:hover .modal-close-bth-icons{
-  fill:#ffffff;
-}
-
-.accent-color{
-  color:  #4d5ae5; ;
-}
-.rewie-checkbox-submit-button{
-  height: 56px;
-  font-size: 16px;
-  font-weight: 500;
-  margin-left: auto;
-  margin-right: auto;
-  min-width: 169px;  
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  background-color: #4D5AE5 ;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.subscribe-item{
-  margin-bottom: 16px;
-  color: #FFF;
-font-size: 16px;
-font-weight: 500;
-line-height: 1.5; 
-letter-spacing: 0.02em;
-}
-.subscribe-form{
-  display: flex;
-  gap:24px ;
-}
-.subscribe-label{
-  gap:24px ;
-
-}
-.rewie-form-field-wraper{
-  margin-bottom: 8px;
-}
-.subscribe-input{
-  width: 264px; 
-  height: 40px;
-  border: 1px solid #ffffff;
-  background-color: transparent; 
-  font-size: 12px; 
-  line-height: 2; 
-  letter-spacing: 0.04em;
-  padding-left: 16px; 
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
-  border-radius: 4px; 
-  color: #ffffff; 
-
-}
-.subscribe-button{
-  min-width: 165px; 
-  height: 40px; 
-  display: flex; 
-  justify-content: center;
+  /* Радіус закруглення */
   align-items: center;
-  color: #FFF;
-text-align: center;
-font-family: "Roboto", sans-serif ;
-font-size: 16px;
-font-weight: 500;
-line-height: 24px; 
-letter-spacing: 0.64px;
-cursor: pointer ;
-background-color: #4D5AE5 ;
-border: none; 
-border-radius: 4px; 
-}
-.subscribe-svg{
-  margin-left: 16px; 
-  fill: #FFFFFF;
+  /* Вирівнювання по центру по вертикалі */
+  justify-content: center;
+  /* Вирівнювання по центру */
+  gap: 24px;
+  /* Відстань між елементами */
+  width: 40px;
+  /* Ширина */
+  height: 40px;
+  /* Висота */
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* Плавний перехід */
 }
 
-.rewie-form{
-  margin-bottom: 16px;
+/* Стиль для наведення курсору та фокусу на клас */
+.class:hover,
+.class:focus {
+  background-color: #404bbf;
+  /* Зміна кольору фону */
 }
-.rewie-form-field-icon:focus{
+
+/* Стиль для іконок у соціальних медіа */
+.social-list-icon-two {
+  fill: #f4f4fd;
+  /* Колір заповнення */
+}
+
+/* Стиль для класу у футері */
+.class-foter {
+  display: flex;
+  /* Встановлення flexbox */
+  width: 100%;
+  /* Ширина */
+  height: 100%;
+  /* Висота */
+  background-color: #4d5ae5;
+  /* Колір фону */
+  border-radius: 50%;
+  /* Радіус закруглення */
+  align-items: center;
+  /* Вирівнювання по центру по вертикалі */
+  justify-content: center;
+  /* Вирівнювання по центру */
+  gap: 24px;
+  /* Відстань між елементами */
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* Плавний перехід */
+}
+
+/* Стиль для наведення курсору та фокусу на клас у футері */
+.class-foter:hover,
+.class-foter:focus {
+  background-color: #31d0aa;
+  /* Зміна кольору фону */
+}
+
+/* Стиль для фону модального вікна */
+.backdrop {
+  position: fixed;
+  /* Фіксоване позиціонування */
+  left: 0;
+  /* Вирівнювання зліва */
+  top: 0;
+  /* Вирівнювання зверху */
+  width: 100%;
+  /* Ширина */
+  height: 100%;
+  /* Висота */
+  background-color: rgba(46, 47, 66, 0.40);
+  /* Колір фону */
+  z-index: 9999999999999999999999999999;
+  /* Величезний індекс шару */
+  opacity: 0;
+  /* Прозорість */
+  visibility: hidden;
+  /* Невидимість */
+  pointer-events: none;
+  /* Вимкнення подій */
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* Плавний перехід */
+}
+
+/* Стиль для відкритого модального вікна */
+.backdrop.is-open {
+  opacity: 1;
+  /* Непрозорість */
+  visibility: visible;
+  /* Видимість */
+  pointer-events: auto;
+  /* Увімкнення подій */
+}
+
+/* Стиль для модального вікна */
+.modal {
+  position: absolute;
+  /* Абсолютне позиціонування */
+  top: 50%;
+  /* Вирівнювання по вертикалі */
+  left: 50%;
+  /* Вирівнювання по горизонталі */
+  transform: translate(-50%, -50%);
+  /* Трансформація для центрування */
+  width: 408px;
+  /* Ширина */
+  min-height: 584px;
+  /* Мінімальна висота */
+  background-color: #FCFCFC;
+  /* Колір фону */
+  border-radius: 4px;
+  /* Радіус закруглення */
+  padding: 72px 24px 24px 24px;
+  /* Відступи */
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  /* Тінь */
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* Плавний перехід */
+}
+
+/* Стиль для кнопки закриття модального вікна */
+.modal-close-bth {
+  position: absolute;
+  /* Абсолютне позиціонування */
+  top: 24px;
+  /* Верхнє вирівнювання */
+  width: 24px;
+  /* Ширина */
+  height: 24px;
+  /* Висота */
+  right: 24px;
+  /* Праве вирівнювання */
+  border-radius: 50%;
+  /* Радіус закруглення */
+  display: flex;
+  /* Встановлення flexbox */
+  align-items: center;
+  /* Вирівнювання по центру по вертикалі */
+  justify-content: center;
+  /* Вирівнювання по центру */
+  background-color: #e7e9fc;
+  /* Колір фону */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  /* Рамка */
+  padding: 0;
+  /* Без відступів */
+  line-height: 0;
+  /* Висота рядка */
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* Плавний перехід */
+  cursor: pointer;
+  /* Зміна курсору на вказівник */
+}
+
+/* Стиль для полів форми */
+.rewie-worm {
+  margin-bottom: 16px;
+  /* Відступ знизу */
+}
+
+/* Стиль для наведення курсору та фокусу на кнопку закриття модального вікна */
+.modal-close-bth:hover,
+.modal-close-bth:focus {
+  stroke: #404bbf;
+  /* Колір обводки */
+  background-color: #404bbf;
+  /* Зміна кольору фону */
+  border: none;
+  /* Без рамки */
+  fill: #ffffff;
+  /* Колір заповнення */
+}
+
+/* Стиль для опису форми */
+.rewie-form-description {
+  color: #2E2F42;
+  /* Колір тексту */
+  text-align: center;
+  /* Вирівнювання по центру */
+  font-family: Roboto;
+  /* Шрифт */
+  font-size: 16px;
+  /* Розмір шрифту */
+  font-weight: 500;
+  /* Напівжирний шрифт */
+  line-height: 1.5;
+  /* Висота рядка */
+  letter-spacing: 0.02em;
+  /* Інтервал між літерами */
+  margin-bottom: 16px;
+  /* Відступ знизу */
+}
+
+/* Стиль для полів введення у формі */
+.rewie-form-input {
+  width: 100%;
+  /* Ширина */
+  height: 40px;
+  /* Висота */
+  border-radius: 4px;
+  /* Радіус закруглення */
+  border: 1px solid rgba(46, 47, 66, 0.40);
+  /* Рамка */
+  background-color: transparent;
+  /* Прозорий фон */
+  outline: 0px solid transparent;
+  /* Без обведення */
+  padding-left: 38px;
+  /* Відступ зліва */
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* Плавний перехід */
+}
+
+/* Стиль для підписів полів форми */
+.rewie-form-field-lable {
+  color: #8E8F99;
+  /* Колір тексту */
+  font-size: 12px;
+  /* Розмір шрифту */
+  font-weight: 400;
+  /* Звичайний шрифт */
+  line-height: 1.17;
+  /* Висота рядка */
+  letter-spacing: 0.04em;
+  /* Інтервал між літерами */
+  margin-bottom: 4px;
+  /* Відступ знизу */
+  display: block;
+  /* Блочне відображення */
+}
+
+/* Стиль для іконок у полях форми */
+.rewie-form-input-icon {
+  position: absolute;
+  /* Абсолютне позиціонування */
+  top: 50%;
+  /* Вирівнювання по вертикалі */
+  left: 16px;
+  /* Ліве вирівнювання */
+  transform: translateY(-50%);
+  /* Трансформація */
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* Плавний перехід */
+}
+
+/* Стиль для полів введення при фокусі */
+.rewie-form-input:focus {
+  border-color: #4D5AE5;
+  /* Колір рамки */
   fill: #4D5AE5;
+  /* Колір заповнення */
+}
+
+/* Стиль для фокусованої іконки у полях форми */
+.rewie-form-input-icon:focus {
+  fill: #4D5AE5;
+  /* Колір заповнення */
+}
+
+/* Стиль для обгортки полів введення */
+.rewie-form-input-wraper {
+  position: relative;
+  /* Відносне позиціонування */
+  margin-bottom: 8px;
+  /* Відступ знизу */
+}
+
+/* Стиль для іконки у полях введення при фокусі */
+.rewie-form-input:focus+.rewie-form-input-icon {
+  fill: #4D5AE5;
+  /* Колір заповнення */
+}
+
+/* Стиль для коментарів у формі */
+.rewie-form-coments {
+  width: 100%;
+  /* Ширина */
+  height: 120px;
+  /* Висота */
+  border-radius: 4px;
+  /* Радіус закруглення */
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  /* Рамка */
+  font-size: 12px;
+  /* Розмір шрифту */
+  font-weight: 400;
+  /* Звичайний шрифт */
+  line-height: 1.17;
+  /* Висота рядка */
+  letter-spacing: 0.04em;
+  /* Інтервал між літерами */
+  color: rgba(46, 47, 66, 0.40);
+  /* Колір тексту */
+  background-color: transparent;
+  /* Прозорий фон */
+  padding: 8px 16px;
+  /* Відступи */
+  outline: transparent;
+  /* Прозора обведення */
+  resize: none;
+  /* Вимкнення зміни розміру */
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* Плавний перехід */
+}
+
+/* Стиль для плейсхолдерів у коментарях */
+.rewie-form-coments::placeholder {
+  color: rgba(46, 47, 66, 0.40);
+  /* Колір тексту */
+}
+
+/* Стиль для коментарів при фокусі */
+.rewie-form-coments:focus {
+  border-color: #4D5AE5;
+  /* Колір рамки */
+}
+
+/* Стиль для обгортки чекбокса */
+.rewie-form-checkbox-wraper {
+  margin-bottom: 24px;
+  /* Відступ знизу */
+}
+
+/* Стиль для підпису чекбокса */
+.rewie-form-checkbox-lable {
+  font-size: 12px;
+  /* Розмір шрифту */
+  line-height: 1.17;
+  /* Висота рядка */
+  letter-spacing: 0.04em;
+  /* Інтервал між літерами */
+  color: #8e8f99;
+  /* Колір тексту */
+}
+
+/* Стиль для власного чекбокса */
+.rewie-form-own-checkbox {
+  display: block;
+  /* Блочне відображення */
+  width: 16px;
+  /* Ширина */
+  cursor: pointer;
+  /* Зміна курсору на вказівник */
+  height: 16px;
+  /* Висота */
+  stroke-width: 1px;
+  /* Ширина обводки */
+  stroke: rgba(46, 47, 66, 0.40);
+  /* Колір обводки */
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  /* Рамка */
+  border-radius: 2px;
+  /* Радіус закруглення */
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* Плавний перехід */
+  display: inline-flex;
+  /* Встановлення flexbox */
+  align-items: center;
+  /* Вирівнювання по центру по вертикалі */
+  justify-content: center;
+  /* Вирівнювання по центру */
+  fill: transparent;
+  /* Прозоре заповнення */
+}
+
+/* Стиль для фокусованого чекбокса */
+.rewie-form-checkbox:focus+.rewie-form-checkbox-lable>.rewie-form-own-checkbox {
+  background-color: #404bbf;
+  /* Колір фону */
+  fill: #F4F4FD;
+  /* Колір заповнення */
+  border: none;
+  /* Без рамки */
+}
+
+/* Стиль для іконок у кнопці закриття модального вікна */
+.modal-close-bth-icons {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* Плавний перехід */
+  width: 24px;
+  /* Ширина */
+  fill: #2E2F42;
+  /* Колір заповнення */
+}
+
+/* Стиль для фокусованих та наведених іконок у кнопці закриття модального вікна */
+.modal-close-bth:focus .modal-close-bth-icons,
+.modal-close-bth:hover .modal-close-bth-icons {
+  fill: #ffffff;
+  /* Колір заповнення */
+}
+
+/* Стиль для акцентного кольору */
+.accent-color {
+  color: #4d5ae5;
+  /* Колір тексту */
+}
+
+/* Стиль для кнопки відправки форми */
+.rewie-checkbox-submit-button {
+  height: 56px;
+  /* Висота */
+  font-size: 16px;
+  /* Розмір шрифту */
+  font-weight: 500;
+  /* Напівжирний шрифт */
+  margin-left: auto;
+  /* Автоматичний відступ зліва */
+  margin-right: auto;
+  /* Автоматичний відступ справа */
+  min-width: 169px;
+  /* Мінімальна ширина */
+  line-height: 1.5;
+  /* Висота рядка */
+  letter-spacing: 0.04em;
+  /* Інтервал між літерами */
+  background-color: #4D5AE5;
+  /* Колір фону */
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* Плавний перехід */
+}
+
+/* Стиль для підпису підписки */
+.subscribe-item {
+  margin-bottom: 16px;
+  /* Відступ знизу */
+  color: #FFF;
+  /* Колір тексту */
+  font-size: 16px;
+  /* Розмір шрифту */
+  font-weight: 500;
+  /* Напівжирний шрифт */
+  line-height: 1.5;
+  /* Висота рядка */
+  letter-spacing: 0.02em;
+  /* Інтервал між літерами */
+  padding-left: 106px;
+}
+
+/* Стиль для форми підписки */
+.subscribe-form {
+  display: flex;
+  flex-wrap: wrap;
+  /* Встановлення flexbox */
+  gap: 24px;
+  /* Відстань між елементами */
+}
+
+/* Стиль для підписів у формі підписки */
+.subscribe-label {
+  gap: 24px;
+  /* Відстань між елементами */
+}
+
+/* Стиль для обгортки полів форми */
+.rewie-form-field-wraper {
+  margin-bottom: 8px;
+  /* Відступ знизу */
+}
+
+/* Стиль для полів підписки */
+.subscribe-input {
+  width: 264px;
+  /* Ширина */
+  height: 40px;
+  /* Висота */
+  border: 1px solid #ffffff;
+  /* Рамка */
+  background-color: transparent;
+  /* Прозорий фон */
+  font-size: 12px;
+  /* Розмір шрифту */
+  line-height: 2;
+  /* Висота рядка */
+  letter-spacing: 0.04em;
+  /* Інтервал між літерами */
+  padding-left: 16px;
+  /* Відступ зліва */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  /* Тінь */
+  border-radius: 4px;
+  /* Радіус закруглення */
+  color: #ffffff;
+  /* Колір тексту */
+}
+
+/* Стиль для кнопки підписки */
+.subscribe-button {
+  min-width: 165px;
+  /* Мінімальна ширина */
+  height: 40px;
+  /* Висота */
+  display: flex;
+  flex-wrap: wrap;
+  /* Встановлення flexbox */
+  justify-content: center;
+  /* Вирівнювання по центру */
+  align-items: center;
+  /* Вирівнювання по центру по вертикалі */
+  color: #FFF;
+  /* Колір тексту */
+  text-align: center;
+  /* Вирівнювання по центру */
+  font-family: "Roboto", sans-serif;
+  /* Шрифт */
+  font-size: 16px;
+  /* Розмір шрифту */
+  font-weight: 500;
+  /* Напівжирний шрифт */
+  line-height: 24px;
+  /* Висота рядка */
+  letter-spacing: 0.64px;
+  /* Інтервал між літерами */
+  cursor: pointer;
+  /* Зміна курсору на вказівник */
+  background-color: #4D5AE5;
+  /* Колір фону */
+  border: none;
+  /* Без рамки */
+  border-radius: 4px;
+  /* Радіус закруглення */
+  padding-left: 61px;
+  padding-right: 78px;
+}
+
+/* Стиль для іконок у кнопці підписки */
+.subscribe-svg {
+  margin-left: 16px;
+  /* Відступ зліва */
+  fill: #FFFFFF;
+  /* Колір заповнення */
+}
+
+/* Стиль для форми */
+.rewie-form {
+  margin-bottom: 16px;
+  /* Відступ знизу */
+}
+
+/* Стиль для фокусованих іконок у полях форми */
+.rewie-form-field-icon:focus {
+  fill: #4D5AE5;
+  /* Колір заповнення */
+}
+
+@media screen and (min-width:768px) {
+  .container{
+  width: 768px;
+  }
+
+.section{
+padding-top: 96px;
+padding-bottom: 96px;
+}
+
+.section-two-item{
+gap: 76px 24px;
+}
+
+.section-two-item-list{
+width: calc((100% - 24px) / 2);
+}
+
+.section-two-list{
+gap: 64px 24px;
+display: flex;
+flex-wrap: wrap;
+margin-left: 108px; 
+margin-right: 108px; 
+}
+
+.section-two-title{
+.list-one{
+width: calc((100% - 36px) / 2); 
+} 
+}
+
+.section-three-list{
+display: flex;
+}
+
+.section-three-item{
+width: calc((100% - 36px) / 2);
+}
+
+.section-one-title{
+  font-size: 56px;
+  line-height: 1.07;
+  padding-bottom: 36px;
+}
+
+.section-one{
+  background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-tb.jpg);
+}
+
+@media screen and (min-resolution: 192dpi) {
+.section-one {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-tb-2.jpg);
+  }
+}
+
+}
+
+@media screen and (min-width:1158px){
+  .container{
+  width: 1158px;
+  padding-right: 15px;
+  padding-left: 15px;
+  }
+
+  .section-two-item{
+  gap:24px;
+  }
+
+  .section-two-item-list{
+width: calc((100% - 3*24px) / 4);
+}
+.section-two-icon{
+display: flex;
+align-items: center;
+height: 112px;
+background-color: #f4f4fd;
+border-radius: 4px;
+margin-bottom: 8px;
+}
+.section-two-list{
+margin: auto;
+}
+
+.section-three-list {
+  display: flex; 
+  }
+
+.section-three-item {
+width: calc((100% - 48px) / 3); 
+}
+
+.section-one-title{
+  font-size: 56px;
+  line-height: 1.07;
+  padding-bottom: 86px;
+}
+
+.section-one {
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+}
+
+@media screen and (min-resolution: 192dpi) {
+  .section-one {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-lp-2.jpg);
+  }
+}
+
 }
