@@ -39,8 +39,8 @@ ol {
 img {
   display: block;
   /* Встановлення блочного відображення для зображень */
-max-width: 100%;
-height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Основні стилі для сторінки */
@@ -90,8 +90,8 @@ body {
   /* Відступ зліва */
   /* padding-right: 15px; */
   /* Відступ справа */
-  padding-left: 16px;
-  padding-right: 16px;
+  /* padding-left: 16px;
+  padding-right: 16px; */
 }
 
 /* Стиль для навігації */
@@ -163,11 +163,11 @@ body {
   /* letter-spacing: 0.02em; */
   /* text-align: center; */
   font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.02em;
-    color: var(--slate);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: var(--slate);
 }
 
 .address-list {
@@ -236,11 +236,10 @@ body {
   /* box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08); */
   /* Тінь */
   /* display: flex; */
-    /* padding-top: 17.5px; */
-      /* padding-bottom: 17.5px; */
-      padding-top: 16px;
-      padding-bottom: 16px;
-
+  /* padding-top: 17.5px; */
+  /* padding-bottom: 17.5px; */
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 /* Стиль для адреси на сторінці */
@@ -282,11 +281,11 @@ body {
   /* Зміна кольору тексту */
 }
 
-.menu-open-bth{
-background-color: transparent;
-border: none;
-padding: 0;
-margin-right: 16px;
+.menu-open-bth {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-right: 16px;
 }
 
 .menu-close-bth {
@@ -298,50 +297,56 @@ margin-right: 16px;
   margin-bottom: 24px;
 }
 
-.mob-menu{
-position: fixed;
-z-index: 1;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-color: #FFF;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-padding: 24px 24px 40px 16px;
-}
-.is-open{
-overflow: auto; 
-opacity: 0;
-visibility: hidden;
-pointer-events: none;
+.mob-menu {
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 72px 24px 40px 16px;
 }
 
-.mb-menu-link{
+.mob-menu.is-open {
+  overflow: auto;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.mb-menu-link {
   font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1,11;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1, 11;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.mob-menu-first {
+  color: #404bbf;
 }
 /* 
 .mb-menu-item :not(:last-child){
   margin-bottom: 40px;
 } */
 
-.mb-menu-list :not(:last-child){
+.mb-menu-list :not(:last-child) {
   margin-bottom: 40px;
 }
 
-.mb-social-list-item{
+.mb-social-list-item {
   width: 24px;
   height: 24px;
 }
 
-.mb-social-list{
+.mb-social-list {
   display: flex;
   gap: 40px;
   margin-top: 48px;
@@ -353,11 +358,16 @@ pointer-events: none;
   /* Зміна кольору фону */
 }
 
-.mb-address-link{
+.mb-address-link {
   color: #2e2f42;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  font-style: normal;
 }
 
-.mb-address-list :not(:last-child){
+.mb-address-list :not(:last-child) {
   margin-bottom: 24px;
 }
 
@@ -367,29 +377,29 @@ pointer-events: none;
   /* Зміна кольору фону */
 }
 
-.mb-class-foter{
+.mb-class-foter {
   display: flex;
-    /* Встановлення flexbox */
-    width: 100%;
-    /* Ширина */
-    height: 100%;
-    /* Висота */
-    background-color: #4d5ae5;
-    /* Колір фону */
-    border-radius: 50%;
-    /* Радіус закруглення */
-    align-items: center;
-    /* Вирівнювання по центру по вертикалі */
-    justify-content: center;
-    /* Вирівнювання по центру */
-    gap: 24px;
-    /* Відстань між елементами */
-    width: 40px;
-    /* Ширина */
-    height: 40px;
-    /* Висота */
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    /* Плавний перехід */
+  /* Встановлення flexbox */
+  width: 100%;
+  /* Ширина */
+  height: 100%;
+  /* Висота */
+  background-color: #4d5ae5;
+  /* Колір фону */
+  border-radius: 50%;
+  /* Радіус закруглення */
+  align-items: center;
+  /* Вирівнювання по центру по вертикалі */
+  justify-content: center;
+  /* Вирівнювання по центру */
+  gap: 24px;
+  /* Відстань між елементами */
+  width: 40px;
+  /* Ширина */
+  height: 40px;
+  /* Висота */
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* Плавний перехід */
 }
 
 /* Стиль для кнопки замовлення послуг */
@@ -417,7 +427,7 @@ pointer-events: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* Плавний перехід кольору фону */
   padding-left: 23px;
-  padding-right:24px ;
+  padding-right: 24px;
 }
 
 /* Стиль для наведення курсору та фокусу на кнопку */
@@ -435,9 +445,11 @@ span {
 
 /* Стиль для секцій */
 .section {
-  padding-top: 120px;
+  padding-bottom: 96px;
+  padding-top: 96px;
+  /* padding-top: 120px; */
   /* Відступ зверху */
-  padding-bottom: 120px;
+  /* padding-bottom: 120px; */
   /* Відступ знизу */
 }
 
@@ -445,20 +457,24 @@ span {
 .section-one {
   background-color: #2e2f42;
   /* Колір фону */
-  /* width: 1440px; */
+  width: 320px;
   /* Ширина секції */
   margin: auto;
   /* Автоматичні відступи */
-  /* padding: 188px 0; */
+  padding: 188px 0;
   padding-bottom: 72px;
   /* Відступи зверху та знизу */
   align-items: center;
   /* Вирівнювання по центру по вертикалі */
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-mb.jpg);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/Dark-bg-mb-2.jpg);
   /* Фонова картинка з градієнтом */
   background-size: cover;
   /* Масштабування фону */
-  max-width: 1440px;
+  /* max-width: 1440px; */
   /* Максимальна ширина */
   background-repeat: no-repeat;
   /* Без повтору фону */
@@ -466,11 +482,16 @@ span {
   /* Центрування фону */
   border: none;
   /* Без рамки */
+
   @media screen and (min-resolution: 192dpi) {
-      .section-one {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-mb-2.jpg);
-      }
+    .section-one {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/Dark-bg-mb-2.jpg);
     }
+  }
 }
 
 /* Стиль для заголовка першої секції */
@@ -478,7 +499,7 @@ span {
   color: #ffffff;
   /* Колір тексту */
   /* font-size: 56px; */
-  font-size: 36px;
+  font-size: 52px;
   /* Розмір шрифту */
   font-weight: 700;
   /* Напівжирний шрифт */
@@ -489,14 +510,15 @@ span {
   /* Інтервал між літерами */
   text-align: center;
   /* Вирівнювання по центру */
-  max-width: 496px;
+  /* max-width: 496px; */
+  max-width: 216px;
   /* Максимальна ширина */
   margin-left: auto;
   /* Автоматичний відступ зліва */
   margin-right: auto;
   /* Автоматичний відступ справа */
-/* padding-bottom: 48px; */
-padding: 72px 52px;
+  margin-bottom: 48px;
+  /* padding: 72px 52px; */
 }
 
 /* Стиль для кнопок */
@@ -521,6 +543,7 @@ button {
   /* Встановлення flexbox */
   flex-wrap: wrap;
   /* gap: 24px; */
+  gap: 72px;
   /* Відстань між елементами */
 }
 
@@ -529,7 +552,9 @@ button {
   /* width: calc((100% - 72px) / 4); */
   /* Ширина елемента */
   width: 100%;
-  padding-bottom: 72px;
+  /* padding-bottom: 72px; */
+  /* margin-bottom: 72px; */
+  /* gap: 72px; */
 }
 
 /* Стиль для заголовків секцій */
@@ -563,16 +588,16 @@ button {
 
 /* Стиль для другої секції */
 .section-two {
-  background-color: #F4F4FD;
+  background-color: #f4f4fd;
   /* Колір фону */
   /* padding: 120px 0; */
-  /* padding: 96px 28px; */
+  padding: 96px 28px;
   /* Відступи зверху та знизу */
 }
 
 /* Стиль для заголовка другої секції */
 .section-two-title {
-  color: #2E2F42;
+  color: #2e2f42;
   /* Колір тексту */
   text-align: center;
   /* Вирівнювання по центру */
@@ -586,19 +611,20 @@ button {
   /* Інтервал між літерами */
   text-transform: capitalize;
   /* Перші літери великі */
-  /* margin-bottom:72px; */
-  padding: 96px 51px 72px;
+  margin-bottom: 72px;
+  /* padding: 96px 51px 72px; */
   /* Відступ знизу */
 }
 
 /* Стиль для списку елементів другої секції */
 .section-two-list {
-  /* display: flex; */
+  display: flex;
+  flex-wrap: wrap;
   /* Встановлення flexbox */
-  /* gap: 24px; */
+  gap: 24px;
   /* Відстань між елементами */
-width: 100%;
-padding-bottom: 96px;
+  width: 100%;
+  /* padding-bottom: 96px; */
 }
 
 /* Стиль для людей у другій секції */
@@ -609,7 +635,7 @@ padding-bottom: 96px;
 
 /* Стиль для підзаголовків у другій секції */
 .section-two-subtitle {
-  color: #2E2F42;
+  color: #2e2f42;
   /* Колір тексту */
   font-size: 20px;
   /* Розмір шрифту */
@@ -641,7 +667,7 @@ padding-bottom: 96px;
 
 /* Стиль для заголовка третьої секції */
 .section-three-title {
-  color: #2E2F42;
+  color: #2e2f42;
   /* Колір тексту */
   font-size: 36px;
   /* Розмір шрифту */
@@ -661,9 +687,10 @@ padding-bottom: 96px;
 
 /* Стиль для списку елементів третьої секції */
 .section-three-list {
-  /* display: flex; */
+  display: flex;
   /* Встановлення flexbox */
   flex-wrap: wrap;
+  /* gap: 48px; */
   /* Перенесення елементів на новий рядок */
   column-gap: 24px;
   /* Відстань між стовпцями */
@@ -693,7 +720,7 @@ padding-bottom: 96px;
 
 /* Стиль для підзаголовків у третій секції */
 .section-three-subtitle {
-  color: #2E2F42;
+  color: #2e2f42;
   /* Колір тексту */
   font-size: 20px;
   /* Розмір шрифту */
@@ -725,7 +752,7 @@ padding-bottom: 96px;
 .list-one {
   list-style-type: none;
   /* Вимкнення маркерів для списків */
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   /* Колір фону */
   text-align: center;
   /* Вирівнювання по центру */
@@ -733,14 +760,16 @@ padding-bottom: 96px;
   /* Ширина елемента */
   border-radius: 0px 0px 4px 4px;
   /* Радіус закруглення */
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   /* Тінь */
   /* padding-bottom: 72px; */
 }
 
 /* Стиль для футера */
 .end {
-  background: #2E2F42;
+  background: #2e2f42;
   /* Колір фону */
   /* padding: 100px 0; */
   /* Відступи зверху та знизу */
@@ -749,7 +778,7 @@ padding-bottom: 96px;
 
 /* Стиль для заголовка футера */
 .end-title {
-  color: #4D5AE5;
+  color: #4d5ae5;
   /* Колір тексту */
   font-family: "Raleway", sans-serif;
   /* Шрифт */
@@ -768,18 +797,20 @@ padding-bottom: 96px;
   margin-bottom: 16px;
   /* Відступ знизу */
   text-align: center;
-  padding-left: 86px;
+  /* padding-left: 86px; */
+  display: block;
+  text-align: center;
 }
 
 /* Стиль для логотипу у футері */
 .logo-end {
-  color: #F4F4FD;
+  color: #f4f4fd;
   /* Колір тексту */
 }
 
 /* Стиль для тексту у футері */
 .end-text {
-  color: #F4F4FD;
+  color: #f4f4fd;
   /* Колір тексту */
   font-size: 16px;
   /* Розмір шрифту */
@@ -789,7 +820,9 @@ padding-bottom: 96px;
   /* Інтервал між літерами */
   max-width: 264px;
   /* Максимальна ширина */
-  padding-bottom: 72px;
+  /* padding-bottom: 72px; */
+  display: block;
+  text-align: left;
 }
 
 /* Стиль для контейнера у футері */
@@ -798,6 +831,8 @@ padding-bottom: 96px;
   flex-wrap: wrap;
   /* Встановлення flexbox */
   align-items: baseline;
+  gap: 72px;
+  justify-content: center;
   /* Вирівнювання по базовій лінії */
 }
 
@@ -811,18 +846,12 @@ padding-bottom: 96px;
   /* Висота рядка */
   letter-spacing: 0.02em;
   /* Інтервал між літерами */
-  color: #FFFFFF;
+  color: #ffffff;
   /* Колір тексту */
   margin-bottom: 16px;
   /* Відступ знизу */
-  /* text-align: center; */
-  padding-left: 86px;
-}
-
-/* Стиль для контейнера у футері */
-.kotusuha {
-  /* margin-right: 120px; */
-  /* Відступ справа */
+  text-align: center;
+  /* padding-left: 86px; */
 }
 
 /* Стиль для списку соціальних медіа */
@@ -854,9 +883,8 @@ padding-bottom: 96px;
   /* Вирівнювання по центру */
   gap: 24px;
   /* Відстань між елементами */
-padding-right:16px;
-padding-left:16px;
-
+  padding-right: 16px;
+  padding-left: 16px;
 }
 
 /* Стиль для елементів соціальних медіа */
@@ -879,7 +907,7 @@ padding-left:16px;
   /* Висота рядка */
   letter-spacing: 0.02em;
   /* Інтервал між літерами */
-  color: #F4F4FD;
+  color: #f4f4fd;
   /* Колір тексту */
   padding: 40px 32px;
   /* Відступи */
@@ -925,7 +953,8 @@ padding-left:16px;
 
 /* Стиль для наведення курсору на елементи третьої секції */
 .section-three-item:hover {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   /* Тінь */
 }
 
@@ -1056,7 +1085,7 @@ padding-left:16px;
   /* Ширина */
   height: 100%;
   /* Висота */
-  background-color: rgba(46, 47, 66, 0.40);
+  background-color: rgba(46, 47, 66, 0.4);
   /* Колір фону */
   z-index: 9999999999999999999999999999;
   /* Величезний індекс шару */
@@ -1066,7 +1095,8 @@ padding-left:16px;
   /* Невидимість */
   pointer-events: none;
   /* Вимкнення подій */
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* Плавний перехід */
 }
 
@@ -1090,17 +1120,19 @@ padding-left:16px;
   /* Вирівнювання по горизонталі */
   transform: translate(-50%, -50%);
   /* Трансформація для центрування */
-  width: 408px;
+  /* width: 408px; */
+  width: 288px;
   /* Ширина */
   min-height: 584px;
   /* Мінімальна висота */
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
   /* Колір фону */
   border-radius: 4px;
   /* Радіус закруглення */
-  padding: 72px 24px 24px 24px;
+  padding: 72px 16px 24px 16px;
   /* Відступи */
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   /* Тінь */
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* Плавний перехід */
@@ -1134,7 +1166,8 @@ padding-left:16px;
   /* Без відступів */
   line-height: 0;
   /* Висота рядка */
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* Плавний перехід */
   cursor: pointer;
   /* Зміна курсору на вказівник */
@@ -1161,7 +1194,7 @@ padding-left:16px;
 
 /* Стиль для опису форми */
 .rewie-form-description {
-  color: #2E2F42;
+  color: #2e2f42;
   /* Колір тексту */
   text-align: center;
   /* Вирівнювання по центру */
@@ -1187,7 +1220,7 @@ padding-left:16px;
   /* Висота */
   border-radius: 4px;
   /* Радіус закруглення */
-  border: 1px solid rgba(46, 47, 66, 0.40);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   /* Рамка */
   background-color: transparent;
   /* Прозорий фон */
@@ -1201,7 +1234,7 @@ padding-left:16px;
 
 /* Стиль для підписів полів форми */
 .rewie-form-field-lable {
-  color: #8E8F99;
+  color: #8e8f99;
   /* Колір тексту */
   font-size: 12px;
   /* Розмір шрифту */
@@ -1233,15 +1266,15 @@ padding-left:16px;
 
 /* Стиль для полів введення при фокусі */
 .rewie-form-input:focus {
-  border-color: #4D5AE5;
+  border-color: #4d5ae5;
   /* Колір рамки */
-  fill: #4D5AE5;
+  fill: #4d5ae5;
   /* Колір заповнення */
 }
 
 /* Стиль для фокусованої іконки у полях форми */
 .rewie-form-input-icon:focus {
-  fill: #4D5AE5;
+  fill: #4d5ae5;
   /* Колір заповнення */
 }
 
@@ -1254,8 +1287,8 @@ padding-left:16px;
 }
 
 /* Стиль для іконки у полях введення при фокусі */
-.rewie-form-input:focus+.rewie-form-input-icon {
-  fill: #4D5AE5;
+.rewie-form-input:focus + .rewie-form-input-icon {
+  fill: #4d5ae5;
   /* Колір заповнення */
 }
 
@@ -1277,7 +1310,7 @@ padding-left:16px;
   /* Висота рядка */
   letter-spacing: 0.04em;
   /* Інтервал між літерами */
-  color: rgba(46, 47, 66, 0.40);
+  color: rgba(46, 47, 66, 0.4);
   /* Колір тексту */
   background-color: transparent;
   /* Прозорий фон */
@@ -1293,13 +1326,13 @@ padding-left:16px;
 
 /* Стиль для плейсхолдерів у коментарях */
 .rewie-form-coments::placeholder {
-  color: rgba(46, 47, 66, 0.40);
+  color: rgba(46, 47, 66, 0.4);
   /* Колір тексту */
 }
 
 /* Стиль для коментарів при фокусі */
 .rewie-form-coments:focus {
-  border-color: #4D5AE5;
+  border-color: #4d5ae5;
   /* Колір рамки */
 }
 
@@ -1333,13 +1366,15 @@ padding-left:16px;
   /* Висота */
   stroke-width: 1px;
   /* Ширина обводки */
-  stroke: rgba(46, 47, 66, 0.40);
+  /* stroke: rgba(46, 47, 66, 0.4); */
   /* Колір обводки */
   border: 1px solid rgba(46, 47, 66, 0.4);
   /* Рамка */
   border-radius: 2px;
   /* Радіус закруглення */
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* Плавний перехід */
   display: inline-flex;
   /* Встановлення flexbox */
@@ -1352,10 +1387,12 @@ padding-left:16px;
 }
 
 /* Стиль для фокусованого чекбокса */
-.rewie-form-checkbox:focus+.rewie-form-checkbox-lable>.rewie-form-own-checkbox {
+.rewie-form-checkbox:focus
+  + .rewie-form-checkbox-lable
+  > .rewie-form-own-checkbox {
   background-color: #404bbf;
   /* Колір фону */
-  fill: #F4F4FD;
+  fill: #f4f4fd;
   /* Колір заповнення */
   border: none;
   /* Без рамки */
@@ -1367,7 +1404,7 @@ padding-left:16px;
   /* Плавний перехід */
   width: 24px;
   /* Ширина */
-  fill: #2E2F42;
+  fill: #2e2f42;
   /* Колір заповнення */
 }
 
@@ -1402,7 +1439,7 @@ padding-left:16px;
   /* Висота рядка */
   letter-spacing: 0.04em;
   /* Інтервал між літерами */
-  background-color: #4D5AE5;
+  background-color: #4d5ae5;
   /* Колір фону */
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* Плавний перехід */
@@ -1412,7 +1449,7 @@ padding-left:16px;
 .subscribe-item {
   margin-bottom: 16px;
   /* Відступ знизу */
-  color: #FFF;
+  color: #fff;
   /* Колір тексту */
   font-size: 16px;
   /* Розмір шрифту */
@@ -1422,7 +1459,8 @@ padding-left:16px;
   /* Висота рядка */
   letter-spacing: 0.02em;
   /* Інтервал між літерами */
-  padding-left: 106px;
+  /* padding-left: 106px; */
+  text-align: center;
 }
 
 /* Стиль для форми підписки */
@@ -1431,6 +1469,8 @@ padding-left:16px;
   flex-wrap: wrap;
   /* Встановлення flexbox */
   gap: 24px;
+  justify-content: center;
+  align-items: center;
   /* Відстань між елементами */
 }
 
@@ -1448,7 +1488,7 @@ padding-left:16px;
 
 /* Стиль для полів підписки */
 .subscribe-input {
-  width: 264px;
+  width: 288px;
   /* Ширина */
   height: 40px;
   /* Висота */
@@ -1485,7 +1525,7 @@ padding-left:16px;
   /* Вирівнювання по центру */
   align-items: center;
   /* Вирівнювання по центру по вертикалі */
-  color: #FFF;
+  color: #fff;
   /* Колір тексту */
   text-align: center;
   /* Вирівнювання по центру */
@@ -1501,21 +1541,21 @@ padding-left:16px;
   /* Інтервал між літерами */
   cursor: pointer;
   /* Зміна курсору на вказівник */
-  background-color: #4D5AE5;
+  background-color: #4d5ae5;
   /* Колір фону */
   border: none;
   /* Без рамки */
   border-radius: 4px;
   /* Радіус закруглення */
-  padding-left: 61px;
-  padding-right: 78px;
+  /* padding-left: 61px;
+  padding-right: 78px; */
 }
 
 /* Стиль для іконок у кнопці підписки */
 .subscribe-svg {
   margin-left: 16px;
   /* Відступ зліва */
-  fill: #FFFFFF;
+  fill: #ffffff;
   /* Колір заповнення */
 }
 
@@ -1527,115 +1567,212 @@ padding-left:16px;
 
 /* Стиль для фокусованих іконок у полях форми */
 .rewie-form-field-icon:focus {
-  fill: #4D5AE5;
+  fill: #4d5ae5;
   /* Колір заповнення */
 }
 
-@media screen and (min-width:768px) {
-  .container{
-  width: 768px;
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
   }
 
-.section{
-padding-top: 96px;
-padding-bottom: 96px;
-}
+  /* .section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  } */
 
-.section-two-item{
-gap: 76px 24px;
-}
-
-.section-two-item-list{
-width: calc((100% - 24px) / 2);
-}
-
-.section-two-list{
-gap: 64px 24px;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-}
-
-.section-two-title{
-.list-one{
-width: calc((100% - 36px) / 2); 
-} 
-}
-
-.section-three-list{
-display: flex;
-}
-
-.section-three-item{
-width: calc((100% - 36px) / 2);
-}
-
-.section-one-title{
-  font-size: 56px;
-  line-height: 1.07;
-  padding-bottom: 36px;
-}
-
-.section-one{
-  background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-tb.jpg);
-}
-
-@media screen and (min-resolution: 192dpi) {
-.section-one {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-tb-2.jpg);
-  }
-}
-
-}
-
-@media screen and (min-width:1158px){
-  .container{
-  width: 1158px;
-  padding-right: 15px;
-  padding-left: 15px;
+  .section-two-item {
+    gap: 76px 24px;
   }
 
-  .section-two-item{
-  gap:24px;
+  .section-two-item-list {
+    width: calc((100% - 24px) / 2);
   }
 
-  .section-two-item-list{
-width: calc((100% - 3*24px) / 4);
-}
-.section-two-icon{
-display: flex;
-align-items: center;
-height: 112px;
-background-color: #f4f4fd;
-border-radius: 4px;
-margin-bottom: 8px;
-}
-.section-two-list{
-margin: auto;
-}
-
-.section-three-list {
-  display: flex; 
+  .section-two-list {
+    gap: 64px 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-.section-three-item {
-width: calc((100% - 48px) / 3); 
-}
+  .section-two-title {
+    .list-one {
+      width: calc((100% - 36px) / 2);
+    }
+  }
+  .mob-menu {
+    display: none;
+  }
 
-.section-one-title{
-  font-size: 56px;
-  line-height: 1.07;
-  padding-bottom: 86px;
-}
+  .section-three-list {
+    display: flex;
+  }
 
-.section-one {
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
-}
+  .section-three-item {
+    width: calc((100% - 24px) / 2);
+  }
 
-@media screen and (min-resolution: 192dpi) {
+  .section-one-title {
+    font-size: 56px;
+    line-height: 1.07;
+    padding-bottom: 36px;
+  }
+
   .section-one {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-lp-2.jpg);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg-tb.jpg);
+    width: 768px;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .address-list {
+    display: inline;
+  }
+
+  .address-link {
+    padding-bottom: 6px;
+    padding-top: 6px;
+  }
+
+  .menu-open-bth {
+    display: none;
+  }
+
+  .section-one-title {
+    max-width: 496px;
+  }
+
+  .section-title {
+    text-align: left;
+  }
+  .end-content {
+    width: 768px;
+    justify-content: left;
+    text-align: left;
+  }
+  .foter-two {
+    text-align: left;
+  }
+
+  .subscribe-item {
+    text-align: left;
+  }
+
+  .modal {
+    width: 408px;
+  }
+
+  @media screen and (min-resolution: 192dpi) {
+    .section-one {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/Dark-bg-tb-2.jpg);
+    }
   }
 }
 
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .section-two-item {
+    gap: 24px;
+  }
+
+  .section-two-item-list {
+    width: calc((100% - 3 * 24px) / 4);
+  }
+  .section-two-icon {
+    display: flex;
+    align-items: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  .section-two-list {
+    margin: auto;
+  }
+
+  .section-three-list {
+    display: flex;
+  }
+
+  .section-three-item {
+    width: calc((100% - 48px) / 3);
+  }
+
+  .section-one-title {
+    font-size: 56px;
+    line-height: 1.07;
+    padding-bottom: 86px;
+  }
+
+  .section-one {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+    max-width: 1440px;
+    width: 100%;
+    padding: 188px 0;
+  }
+
+  .address-list {
+    display: flex;
+  }
+
+  .address-link {
+    padding-bottom: 24px;
+    padding-top: 24px;
+  }
+
+  .page-header {
+    border-bottom: 1px solid #e7e9fc;
+    /* Нижня рамка */
+    background: #fff;
+    /* Колір фону */
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    /* Тінь */
+    display: flex;
+    /* padding-top: 17.5px;
+    padding-bottom: 17.5px; */
+    padding: 0;
+  }
+
+  .section-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .section-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  @media screen and (min-resolution: 192dpi) {
+    .section-one {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-lp-2.jpg);
+    }
+  }
 }
