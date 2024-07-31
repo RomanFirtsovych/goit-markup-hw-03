@@ -625,6 +625,7 @@ button {
   /* Відстань між елементами */
   width: 100%;
   /* padding-bottom: 96px; */
+  justify-content: center;
 }
 
 /* Стиль для людей у другій секції */
