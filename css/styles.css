@@ -90,8 +90,8 @@ body {
   /* Відступ зліва */
   /* padding-right: 15px; */
   /* Відступ справа */
-  /* padding-left: 16px;
-  padding-right: 16px; */
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 /* Стиль для навігації */
@@ -196,6 +196,8 @@ body {
   /* Колір тексту */
   margin-right: 76px;
   /* Відступ справа */
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 /* Стиль для посилань у меню */
@@ -229,17 +231,18 @@ body {
 
 /* Стиль для заголовка сторінки */
 .page-header {
-  /* border-bottom: 1px solid #E7E9FC; */
+  border-bottom: 1px solid #e7e9fc;
   /* Нижня рамка */
   /* background: #FFF; */
   /* Колір фону */
-  /* box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08); */
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   /* Тінь */
   /* display: flex; */
   /* padding-top: 17.5px; */
   /* padding-bottom: 17.5px; */
-  padding-top: 16px;
-  padding-bottom: 16px;
+  /* padding-top: 16px; */
+  /* padding-bottom: 16px; */
 }
 
 /* Стиль для адреси на сторінці */
@@ -248,12 +251,18 @@ body {
   /* Звичайний стиль шрифту */
   color: #434455;
   /* Колір тексту */
-  font-size: 16px;
+  /* font-size: 16px; */
+  font-size: 12px;
   /* Розмір шрифту */
-  line-height: 1.5;
+  /* line-height: 1.5; */
+  line-height: 1.2;
   /* Висота рядка */
-  letter-spacing: 0.02em;
+  /* letter-spacing: 0.02em; */
+  letter-spacing: 0.04em;
   /* Інтервал між літерами */
+  font-weight: 400;
+  /* margin-top: 16px; */
+  /* justify-content: center; */
 }
 
 /* Стиль для посилань адреси */
@@ -264,9 +273,9 @@ body {
   /* Заборона стиснення */
   color: #434455;
   /* Колір тексту */
-  padding-top: 24px;
+  /* padding-top: 24px; */
   /* Відступ зверху */
-  padding-bottom: 24px;
+  /* padding-bottom: 24px; */
   /* Відступ знизу */
   display: block;
   /* Блочне відображення */
@@ -470,7 +479,7 @@ span {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/Dark-bg-mb-2.jpg);
+    url(../images/Dark-bg-mb.jpg);
   /* Фонова картинка з градієнтом */
   background-size: cover;
   /* Масштабування фону */
@@ -499,7 +508,7 @@ span {
   color: #ffffff;
   /* Колір тексту */
   /* font-size: 56px; */
-  font-size: 52px;
+  font-size: 36px;
   /* Розмір шрифту */
   font-weight: 700;
   /* Напівжирний шрифт */
@@ -517,8 +526,9 @@ span {
   /* Автоматичний відступ зліва */
   margin-right: auto;
   /* Автоматичний відступ справа */
-  margin-bottom: 48px;
+  /* margin-bottom: 48px; */
   /* padding: 72px 52px; */
+  margin-bottom: 72px;
 }
 
 /* Стиль для кнопок */
@@ -591,7 +601,7 @@ button {
   background-color: #f4f4fd;
   /* Колір фону */
   /* padding: 120px 0; */
-  padding: 96px 28px;
+  padding: 96px 0;
   /* Відступи зверху та знизу */
 }
 
@@ -621,7 +631,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   /* Встановлення flexbox */
-  gap: 24px;
+  gap: 70px;
   /* Відстань між елементами */
   width: 100%;
   /* padding-bottom: 96px; */
@@ -663,6 +673,7 @@ button {
   /* Інтервал між літерами */
   text-align: center;
   /* Вирівнювання по центру */
+  margin-bottom: 8px;
 }
 
 /* Стиль для заголовка третьої секції */
@@ -877,14 +888,14 @@ button {
   /* Встановлення flexbox */
   justify-content: space-between;
   /* Розподіл простору між елементами */
-  margin: 16px 24px;
+  /* margin: 16px 24px; */
   /* Відступи */
   justify-content: center;
   /* Вирівнювання по центру */
   gap: 24px;
   /* Відстань між елементами */
-  padding-right: 16px;
-  padding-left: 16px;
+  /* padding-right: 16px; */
+  /* padding-left: 16px; */
 }
 
 /* Стиль для елементів соціальних медіа */
@@ -1384,6 +1395,7 @@ button {
   /* Вирівнювання по центру */
   fill: transparent;
   /* Прозоре заповнення */
+  margin-right: 8px;
 }
 
 /* Стиль для фокусованого чекбокса */
@@ -1559,12 +1571,6 @@ button {
   /* Колір заповнення */
 }
 
-/* Стиль для форми */
-.rewie-form {
-  margin-bottom: 16px;
-  /* Відступ знизу */
-}
-
 /* Стиль для фокусованих іконок у полях форми */
 .rewie-form-field-icon:focus {
   fill: #4d5ae5;
@@ -1616,7 +1622,7 @@ button {
   .section-one-title {
     font-size: 56px;
     line-height: 1.07;
-    padding-bottom: 36px;
+    /* padding-bottom: 36px; */
   }
 
   .section-one {
@@ -1633,12 +1639,16 @@ button {
   }
 
   .address-list {
-    display: inline;
+    /* display: inline; */
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: column; */
+    gap: 6px;
+    /* justify-content: center; */
   }
 
-  .address-link {
-    padding-bottom: 6px;
-    padding-top: 6px;
+  .one-line {
+    align-items: center;
   }
 
   .menu-open-bth {
@@ -1647,6 +1657,7 @@ button {
 
   .section-one-title {
     max-width: 496px;
+    margin-bottom: 36px;
   }
 
   .section-title {
@@ -1656,7 +1667,14 @@ button {
     width: 768px;
     justify-content: left;
     text-align: left;
+    padding: 0 108px;
+    gap: 72px 24px;
   }
+
+  .end-title {
+    text-align: left;
+  }
+
   .foter-two {
     text-align: left;
   }
@@ -1667,6 +1685,10 @@ button {
 
   .modal {
     width: 408px;
+  }
+
+  .subscribe-input {
+    width: 264px;
   }
 
   @media screen and (min-resolution: 192dpi) {
@@ -1685,10 +1707,24 @@ button {
     width: 1158px;
     padding-right: 15px;
     padding-left: 15px;
+    gap: 0;
+  }
+
+  .kotusuha {
+    margin-right: 120px;
   }
 
   .section-two-item {
     gap: 24px;
+  }
+
+  .address-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .one-line {
+    justify-content: space-between;
   }
 
   .section-two-item-list {
@@ -1717,7 +1753,8 @@ button {
   .section-one-title {
     font-size: 56px;
     line-height: 1.07;
-    padding-bottom: 86px;
+    /* padding-bottom: 86px; */
+    margin-bottom: 48px;
   }
 
   .section-one {
@@ -1754,6 +1791,12 @@ button {
     padding: 0;
   }
 
+  .page-address {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
   .section-title {
     font-weight: 500;
     font-size: 20px;
@@ -1764,6 +1807,10 @@ button {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
+  }
+
+  .end-content-two {
+    margin-right: auto;
   }
 
   @media screen and (min-resolution: 192dpi) {
